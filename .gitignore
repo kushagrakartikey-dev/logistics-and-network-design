@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+data/
+logs/
+outputs/logistics/tables/*.parquet
+.DS_Store
+.ipynb_checkpoints/

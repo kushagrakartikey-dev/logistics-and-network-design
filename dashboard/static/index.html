@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Logistics and Network Design: five-metro network control tower</title>
+<meta name="description" content="Control tower for a five-metro 3PL network: routing, fleet, warehouse, DC operations and micro-fulfilment economics across seven Indian states and union territories.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚚</text></svg>">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" aria-label="Modules">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 22h4l3-9h10l3 9h4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><circle cx="10" cy="24" r="2.6" fill="currentColor"/><circle cx="22" cy="24" r="2.6" fill="currentColor"/><path d="M16 4v6" stroke="#E3A21A" stroke-width="2.4"/></svg>
+      <div><b>Logistics and Network Design</b><span>Portfolio Output 6</span></div>
+    </div>
+    <nav id="tabs" role="tablist">
+      <button role="tab" data-tab="overview"><i class="dot" data-status="overview"></i><span>Command center</span></button>
+      <button role="tab" data-tab="routes"><i class="dot" data-status="routes"></i><span>Last-mile routing</span></button>
+      <button role="tab" data-tab="fleet"><i class="dot" data-status="fleet"></i><span>Fleet planning</span></button>
+      <button role="tab" data-tab="warehouse"><i class="dot" data-status="warehouse"></i><span>Warehouse slotting</span></button>
+      <button role="tab" data-tab="simulation"><i class="dot" data-status="simulation"></i><span>DC operations</span></button>
+      <button role="tab" data-tab="network"><i class="dot" data-status="network"></i><span>Network &amp; finance</span></button>
+    </nav>
+    <div class="legend" aria-label="Status legend">
+      <span><i class="dot good"></i>On target</span><span><i class="dot watch"></i>Watch</span><span><i class="dot breach"></i>Breach</span>
+      <p>Status for the selected city.</p>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <header class="context">
+      <nav class="city-strip" id="cityStrip" aria-label="Select city"></nav>
+      <div class="context-meta" id="contextMeta"></div>
+    </header>
+
+    <main id="main">
+      <div class="page-head">
+        <h1 id="pageTitle">Command center</h1>
+        <p id="pageAnswer" class="answer" aria-live="polite"></p>
+      </div>
+      <section class="kpis" id="kpis" aria-label="Key indicators"></section>
+
+      <section class="panel-grid" id="panel-overview" role="tabpanel">
+        <article class="panel span-12">
+          <header><h2>Network scorecard</h2><p>Every city against its operating targets. Select a row to switch city.</p></header>
+          <div id="scorecard" class="table-wrap"></div>
+        </article>
+        <article class="panel span-7">
+          <header><h2>Daily last-mile cost</h2><p>₹ lakh per day on the plan day, manual dispatch vs optimized routes</p></header>
+          <div id="ovCost" class="plot"></div>
+        </article>
+        <article class="panel span-5">
+          <header><h2>Network health</h2><p id="healthNote"></p></header>
+          <div id="ovHealth" class="plot"></div>
+        </article>
+        <article class="panel span-12">
+          <header><h2>Priority actions</h2><p>Derived from the model results; ordered by risk to the delivery promise</p></header>
+          <div id="actions" class="table-wrap"></div>
+        </article>
+        <article class="panel span-12">
+          <header><h2>Order volume, 90 days</h2><p>Orders per day by city; shaded bands are the festive sale and the Diwali peak</p></header>
+          <div id="ovDemand" class="plot"></div>
+        </article>
+        <article class="panel span-12">
+          <header><h2>Open alerts</h2><p>Ranked by severity, then orders affected</p></header>
+          <div id="alerts" class="table-wrap"></div>
+        </article>
+      </section>
+
+      <section class="panel-grid" id="panel-routes" role="tabpanel" hidden>
+        <div class="toolbar span-12"><span>Plan</span><div class="seg" id="planSeg"><button data-v="optimized">Optimized</button><button data-v="baseline">Manual dispatch</button></div><span class="muted" id="routeNote"></span></div>
+        <article class="panel span-8 flush">
+          <header><h2>Routes on the plan day</h2><p>Each line is one vehicle tour from its depot; red points are orders left unserved</p></header>
+          <div id="routeMap" class="plot tall"></div>
+        </article>
+        <article class="panel span-4">
+          <header><h2>On-time by zone</h2><p>Share of orders delivered inside their window; dashed line is the 95% standard</p></header>
+          <div id="zoneBar" class="plot short"></div>
+          <dl id="routeStats" class="stats"></dl>
+        </article>
+        <article class="panel span-12">
+          <header><h2>Vehicle tours</h2><p>Sorted by cost. Duty overrun means the tour runs past the driver's shift when replayed with real traffic.</p></header>
+          <div id="routeTable" class="table-wrap scroll"></div>
+        </article>
+      </section>
+
+      <section class="panel-grid" id="panel-fleet" role="tabpanel" hidden>
+        <article class="panel span-7">
+          <header><h2>Vehicles needed by demand level</h2><p>Recommended mix from a fleet-size-and-mix optimization; dashed line is today's 25-vehicle fleet</p></header>
+          <div id="fleetCurve" class="plot"></div>
+        </article>
+        <article class="panel span-5">
+          <header><h2>On-time share as volume grows</h2><p>Today's fleet vs the recommended fleet; dotted line is the 95% standard</p></header>
+          <div id="fleetComp" class="plot"></div>
+        </article>
+        <article class="panel span-7">
+          <header><h2>Scenario detail</h2><p>Demand level relative to the plan day; history days shows how often the last 90 days hit that level</p></header>
+          <div id="fleetTable" class="table-wrap"></div>
+        </article>
+        <article class="panel span-5">
+          <header><h2>Own vs lease</h2><p>Annual total cost of ownership of the recommended fleet, ₹ crore</p></header>
+          <div id="fleetTco" class="plot"></div>
+        </article>
+      </section>
+
+      <section class="panel-grid" id="panel-warehouse" role="tabpanel" hidden>
+        <article class="panel span-6">
+          <header><h2>Current layout</h2><p>Picks per location; aisles run left to right away from dispatch, bays bottom to top</p></header>
+          <div id="heatBase" class="plot"></div>
+        </article>
+        <article class="panel span-6">
+          <header><h2>Optimized layout</h2><p>Fast movers pulled toward dispatch, co-picked items kept together, heavy items on lower shelves</p></header>
+          <div id="heat" class="plot"></div>
+        </article>
+        <article class="panel span-7">
+          <header><h2>Result against target and ceiling</h2><p>Measured on held-out pick orders; the ceiling uses perfect knowledge of each item's demand</p></header>
+          <div id="whBullet" class="plot short"></div>
+          <p class="note" id="whNote"></p>
+        </article>
+        <article class="panel span-5">
+          <header><h2>Pick productivity</h2><p>Pick lines per hour, labour cost per 1,000 picks</p></header>
+          <div id="pph" class="plot short"></div>
+          <dl id="whStats" class="stats"></dl>
+        </article>
+      </section>
+
+      <section class="panel-grid" id="panel-simulation" role="tabpanel" hidden>
+        <article class="panel span-7">
+          <header><h2>95th-percentile intake-to-dispatch time</h2><p>Minutes across 200 simulated days per roster; dashed line is the 2-hour promise</p></header>
+          <div id="simBar" class="plot"></div>
+        </article>
+        <article class="panel span-5">
+          <header><h2>How long orders wait</h2><p>Distribution of intake-to-dispatch minutes, all simulated orders</p></header>
+          <div id="simHist" class="plot"></div>
+        </article>
+        <article class="panel span-12">
+          <header><h2>Rosters and utilisation</h2><p>Heads per shift as pickers / packers / QC / loaders; two shifts a day</p></header>
+          <div id="simTable" class="table-wrap"></div>
+        </article>
+      </section>
+
+      <section class="panel-grid" id="panel-network" role="tabpanel" hidden>
+        <article class="panel span-12 inputs">
+          <header><h2>Scenario inputs</h2><p>Recalculated in your browser</p></header>
+          <div class="sliders">
+            <label>New micro-fulfilment centres <input type="range" id="pSlider" min="1" max="5" value="1"><output id="pOut">1</output></label>
+            <label>Cost of capital (WACC) <input type="range" id="waccSlider" min="8" max="16" step="0.5" value="12"><output id="waccOut">12%</output></label>
+            <label>Parcel growth per year <input type="range" id="growthSlider" min="0" max="40" step="1" value="18"><output id="growthOut">18%</output></label>
+          </div>
+        </article>
+        <article class="panel span-7 flush">
+          <header><h2>Candidate sites</h2><p>Teal = selected for this scenario, amber = other candidates, ink = existing depots</p></header>
+          <div id="netMap" class="plot tall"></div>
+        </article>
+        <article class="panel span-5">
+          <header><h2>Five-year value of this option</h2><p>Net present value of cash flows; no terminal value</p></header>
+          <dl id="npvBox" class="stats"></dl>
+          <div id="cfWaterfall" class="plot short"></div>
+        </article>
+        <article class="panel span-4">
+          <header><h2>NPV by number of sites</h2><p>₹ crore at the inputs above</p></header>
+          <div id="npvBars" class="plot short"></div>
+        </article>
+        <article class="panel span-8">
+          <header><h2>Distance and 2-hour coverage</h2><p>Average km per parcel and share of parcels reachable within 2 hours at evening-peak traffic</p></header>
+          <div id="netCurve" class="plot short"></div>
+        </article>
+        <article class="panel span-12">
+          <header><h2>Where to invest first</h2><p>Cities ranked by the parcel volume at which their best option breaks even</p></header>
+          <div id="rankTable" class="table-wrap"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p id="footNote">Built from the project’s operational dataset with OR-Tools (routing), PuLP (network design), SimPy (DC simulation) and scikit-learn (forecasting). All charts render in your browser; there is no server.</p>
+    </footer>
+  </div>
+</div>
+<script src="vendor/plotly-2.35.2.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

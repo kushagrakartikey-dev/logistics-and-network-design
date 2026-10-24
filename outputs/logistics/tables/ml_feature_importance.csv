@@ -1,0 +1,65 @@
+feature,importance
+vehicle_type_TWO_WHEELER,0.2630512060624679
+rain,0.20208650248377524
+event_traffic,0.18366725455996816
+city_id_CHE,0.09632677083221232
+city_id_BLR,0.08015106490672498
+city_id_KOL,0.05086971274703743
+vehicle_type_VAN_2T,0.039817344016408636
+city_id_DEL,0.028245634321697098
+depart_hour,0.005637195440363182
+haversine_km,0.00540458443448534
+dest_zone_OMR Corridor,0.004549097564841045
+origin_zone_Howrah,0.0038873083064207246
+dest_zone_Howrah,0.0038354873575864065
+dest_zone_Noida,0.002656179495290769
+origin_zone_Central Kolkata,0.0023145186051830185
+origin_zone_Noida,0.0022359470550067113
+origin_zone_East Kolkata,0.0021627642462548513
+origin_zone_Navi Mumbai,0.0021594786931371755
+origin_zone_OMR Corridor,0.002058742828656882
+dest_zone_East Kolkata,0.0020267633609052146
+dest_zone_South Mumbai,0.0018858041326645207
+origin_zone_South Mumbai,0.0014778954994663657
+dest_zone_Central Kolkata,0.0013872858378246367
+dest_zone_Navi Mumbai,0.001342667660808224
+dest_zone_Central Delhi,0.0009256116615966954
+dest_zone_Central Bengaluru,0.0008371380335667286
+dest_zone_East Bengaluru,0.0007132221000067372
+dest_zone_Central Chennai,0.0006815490892140137
+origin_zone_Central Delhi,0.0006723649924971274
+dow,0.0006646305877947747
+origin_zone_Central Bengaluru,0.000659975605051398
+origin_zone_Thane,0.0005913715062885138
+dest_zone_Thane,0.0005110810756854242
+origin_zone_Central Chennai,0.0004965091261470557
+dest_zone_Gurugram,0.0004500852814594377
+origin_zone_West Chennai,0.00042319914261261694
+origin_zone_Bandra,0.0004170252090445333
+dest_zone_West Chennai,0.00033270852959475707
+origin_zone_Gurugram,0.00031529722163695437
+dest_zone_Bandra,0.0002840455873392457
+origin_zone_North Bengaluru,0.0002693596583671929
+origin_zone_East Bengaluru,0.0002122076558923829
+dest_zone_North Bengaluru,0.00019915189803633524
+dest_zone_West Bengaluru,0.00013118438004231664
+origin_zone_West Bengaluru,0.00012669954720683315
+traffic_band,0.00011417136889246771
+origin_zone_South Kolkata,0.0001038203720614631
+origin_zone_North Kolkata,8.633919992823476e-05
+origin_zone_Andheri,7.911211809433123e-05
+dest_zone_North Kolkata,6.733954763033665e-05
+dest_zone_South Chennai,6.55338095545494e-05
+origin_zone_North Chennai,6.0384707175876895e-05
+dest_zone_Andheri,5.623498147123141e-05
+vehicle_type_TEMPO_1T,5.532990535904984e-05
+dest_zone_South Kolkata,5.447545726350531e-05
+dest_zone_West Delhi,4.9227121924351205e-05
+dest_zone_North Chennai,3.3383397097557163e-05
+origin_zone_South Chennai,2.3019675279065746e-05
+city_id_MUM,0.0
+origin_zone_South Bengaluru,0.0
+origin_zone_South Delhi,0.0
+origin_zone_West Delhi,0.0
+dest_zone_South Delhi,0.0
+dest_zone_South Bengaluru,0.0

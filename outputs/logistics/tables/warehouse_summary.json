@@ -1,0 +1,284 @@
+{
+  "national": {
+    "travel_reduction_pct": 26.18,
+    "throughput_gain_pct": 23.35,
+    "perfect_info_travel_reduction_pct": 26.97
+  },
+  "by_city": {
+    "MUM": {
+      "baseline": {
+        "layout": "baseline",
+        "pick_lines": 34385,
+        "batches": 3300,
+        "travel_m": 1215581.4,
+        "travel_m_per_line": 35.35,
+        "walk_hours": 375.18,
+        "handling_hours": 119.62,
+        "total_hours": 549.8,
+        "picks_per_hour": 62.5,
+        "labour_cost_per_1000_picks": 2958.1,
+        "heavy_slot_violations": 615,
+        "upper_level_pick_share": 0.3673
+      },
+      "optimized": {
+        "layout": "optimized",
+        "pick_lines": 34385,
+        "batches": 3300,
+        "travel_m": 888866.8,
+        "travel_m_per_line": 25.85,
+        "walk_hours": 274.34,
+        "handling_hours": 114.97,
+        "total_hours": 444.31,
+        "picks_per_hour": 77.4,
+        "labour_cost_per_1000_picks": 2390.5,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4338
+      },
+      "perfect_information": {
+        "layout": "perfect_information",
+        "pick_lines": 34385,
+        "batches": 3300,
+        "travel_m": 883004.8,
+        "travel_m_per_line": 25.68,
+        "walk_hours": 272.53,
+        "handling_hours": 115.1,
+        "total_hours": 442.63,
+        "picks_per_hour": 77.7,
+        "labour_cost_per_1000_picks": 2381.5,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4358
+      },
+      "comparison": {
+        "travel_reduction_pct": 26.88,
+        "throughput_gain_pct": 23.84,
+        "labour_cost_reduction_pct": 19.19,
+        "perfect_info_travel_reduction_pct": 27.36,
+        "perfect_info_throughput_gain_pct": 24.32,
+        "clusters": 138,
+        "clustered_skus": 2936,
+        "velocity_shrinkage_k": 0.25,
+        "evaluation": "held-out pick orders (last third of history)"
+      }
+    },
+    "DEL": {
+      "baseline": {
+        "layout": "baseline",
+        "pick_lines": 36416,
+        "batches": 3465,
+        "travel_m": 1283205.4,
+        "travel_m_per_line": 35.24,
+        "walk_hours": 396.05,
+        "handling_hours": 128.22,
+        "total_hours": 582.03,
+        "picks_per_hour": 62.6,
+        "labour_cost_per_1000_picks": 2956.8,
+        "heavy_slot_violations": 615,
+        "upper_level_pick_share": 0.3712
+      },
+      "optimized": {
+        "layout": "optimized",
+        "pick_lines": 36416,
+        "batches": 3465,
+        "travel_m": 931002.0,
+        "travel_m_per_line": 25.57,
+        "walk_hours": 287.35,
+        "handling_hours": 122.1,
+        "total_hours": 467.2,
+        "picks_per_hour": 77.9,
+        "labour_cost_per_1000_picks": 2373.5,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4387
+      },
+      "perfect_information": {
+        "layout": "perfect_information",
+        "pick_lines": 36416,
+        "batches": 3465,
+        "travel_m": 934466.6,
+        "travel_m_per_line": 25.66,
+        "walk_hours": 288.42,
+        "handling_hours": 120.36,
+        "total_hours": 466.52,
+        "picks_per_hour": 78.1,
+        "labour_cost_per_1000_picks": 2370.0,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.414
+      },
+      "comparison": {
+        "travel_reduction_pct": 27.45,
+        "throughput_gain_pct": 24.44,
+        "labour_cost_reduction_pct": 19.73,
+        "perfect_info_travel_reduction_pct": 27.18,
+        "perfect_info_throughput_gain_pct": 24.76,
+        "clusters": 131,
+        "clustered_skus": 3058,
+        "velocity_shrinkage_k": 0.25,
+        "evaluation": "held-out pick orders (last third of history)"
+      }
+    },
+    "BLR": {
+      "baseline": {
+        "layout": "baseline",
+        "pick_lines": 29702,
+        "batches": 2805,
+        "travel_m": 1062156.0,
+        "travel_m_per_line": 35.76,
+        "walk_hours": 327.83,
+        "handling_hours": 104.32,
+        "total_hours": 478.9,
+        "picks_per_hour": 62.0,
+        "labour_cost_per_1000_picks": 3042.5,
+        "heavy_slot_violations": 615,
+        "upper_level_pick_share": 0.3785
+      },
+      "optimized": {
+        "layout": "optimized",
+        "pick_lines": 29702,
+        "batches": 2805,
+        "travel_m": 789385.0,
+        "travel_m_per_line": 26.58,
+        "walk_hours": 243.64,
+        "handling_hours": 99.37,
+        "total_hours": 389.76,
+        "picks_per_hour": 76.2,
+        "labour_cost_per_1000_picks": 2476.2,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4349
+      },
+      "perfect_information": {
+        "layout": "perfect_information",
+        "pick_lines": 29702,
+        "batches": 2805,
+        "travel_m": 774141.4,
+        "travel_m_per_line": 26.06,
+        "walk_hours": 238.93,
+        "handling_hours": 99.37,
+        "total_hours": 385.05,
+        "picks_per_hour": 77.1,
+        "labour_cost_per_1000_picks": 2446.3,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4349
+      },
+      "comparison": {
+        "travel_reduction_pct": 25.68,
+        "throughput_gain_pct": 22.9,
+        "labour_cost_reduction_pct": 18.61,
+        "perfect_info_travel_reduction_pct": 27.12,
+        "perfect_info_throughput_gain_pct": 24.35,
+        "clusters": 134,
+        "clustered_skus": 2791,
+        "velocity_shrinkage_k": 0.5,
+        "evaluation": "held-out pick orders (last third of history)"
+      }
+    },
+    "CHE": {
+      "baseline": {
+        "layout": "baseline",
+        "pick_lines": 24209,
+        "batches": 2310,
+        "travel_m": 839943.2,
+        "travel_m_per_line": 34.7,
+        "walk_hours": 259.24,
+        "handling_hours": 84.99,
+        "total_hours": 382.74,
+        "picks_per_hour": 63.3,
+        "labour_cost_per_1000_picks": 2690.8,
+        "heavy_slot_violations": 615,
+        "upper_level_pick_share": 0.3751
+      },
+      "optimized": {
+        "layout": "optimized",
+        "pick_lines": 24209,
+        "batches": 2310,
+        "travel_m": 625748.0,
+        "travel_m_per_line": 25.85,
+        "walk_hours": 193.13,
+        "handling_hours": 80.58,
+        "total_hours": 312.21,
+        "picks_per_hour": 77.5,
+        "labour_cost_per_1000_picks": 2195.0,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4261
+      },
+      "perfect_information": {
+        "layout": "perfect_information",
+        "pick_lines": 24209,
+        "batches": 2310,
+        "travel_m": 614002.8,
+        "travel_m_per_line": 25.36,
+        "walk_hours": 189.51,
+        "handling_hours": 80.78,
+        "total_hours": 308.79,
+        "picks_per_hour": 78.4,
+        "labour_cost_per_1000_picks": 2170.9,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4303
+      },
+      "comparison": {
+        "travel_reduction_pct": 25.5,
+        "throughput_gain_pct": 22.43,
+        "labour_cost_reduction_pct": 18.43,
+        "perfect_info_travel_reduction_pct": 26.9,
+        "perfect_info_throughput_gain_pct": 23.85,
+        "clusters": 155,
+        "clustered_skus": 2459,
+        "velocity_shrinkage_k": 0.25,
+        "evaluation": "held-out pick orders (last third of history)"
+      }
+    },
+    "KOL": {
+      "baseline": {
+        "layout": "baseline",
+        "pick_lines": 20811,
+        "batches": 1980,
+        "travel_m": 760426.8,
+        "travel_m_per_line": 36.54,
+        "walk_hours": 234.7,
+        "handling_hours": 73.69,
+        "total_hours": 341.39,
+        "picks_per_hour": 61.0,
+        "labour_cost_per_1000_picks": 2579.6,
+        "heavy_slot_violations": 615,
+        "upper_level_pick_share": 0.3909
+      },
+      "optimized": {
+        "layout": "optimized",
+        "pick_lines": 20811,
+        "batches": 1980,
+        "travel_m": 574909.4,
+        "travel_m_per_line": 27.63,
+        "walk_hours": 177.44,
+        "handling_hours": 68.99,
+        "total_hours": 279.43,
+        "picks_per_hour": 74.5,
+        "labour_cost_per_1000_picks": 2111.4,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4191
+      },
+      "perfect_information": {
+        "layout": "perfect_information",
+        "pick_lines": 20811,
+        "batches": 1980,
+        "travel_m": 563856.2,
+        "travel_m_per_line": 27.09,
+        "walk_hours": 174.03,
+        "handling_hours": 69.82,
+        "total_hours": 276.85,
+        "picks_per_hour": 75.2,
+        "labour_cost_per_1000_picks": 2091.9,
+        "heavy_slot_violations": 0,
+        "upper_level_pick_share": 0.4397
+      },
+      "comparison": {
+        "travel_reduction_pct": 24.4,
+        "throughput_gain_pct": 22.13,
+        "labour_cost_reduction_pct": 18.15,
+        "perfect_info_travel_reduction_pct": 25.85,
+        "perfect_info_throughput_gain_pct": 23.28,
+        "clusters": 144,
+        "clustered_skus": 2325,
+        "velocity_shrinkage_k": 0.25,
+        "evaluation": "held-out pick orders (last third of history)"
+      }
+    }
+  }
+}

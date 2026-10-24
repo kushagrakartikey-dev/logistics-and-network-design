@@ -1,0 +1,21 @@
+severity,area,city_id,message,impact_orders
+high,DC operations,MUM,"Diwali volume at current roster: P95 cycle 458 min, backlog P50 176 orders",176.0
+high,DC operations,CHE,"Diwali volume at current roster: P95 cycle 543 min, backlog P50 167 orders",167.0
+high,DC operations,KOL,"Diwali volume at current roster: P95 cycle 519 min, backlog P50 143 orders",143.0
+high,DC operations,DEL,"Diwali volume at current roster: P95 cycle 433 min, backlog P50 142 orders",142.0
+high,DC operations,BLR,"Diwali volume at current roster: P95 cycle 351 min, backlog P50 54 orders",54.0
+medium,Fleet,CHE,Current 25-vehicle fleet falls below the compliance target from 3x demand,69.0
+medium,Fleet,KOL,Current 25-vehicle fleet falls below the compliance target from 3x demand,42.0
+medium,Fleet,MUM,Current 25-vehicle fleet falls below the compliance target from 1.5x demand,17.0
+medium,Fleet,DEL,Current 25-vehicle fleet falls below the compliance target from 1x demand,10.0
+medium,Fleet,BLR,Current 25-vehicle fleet falls below the compliance target from 1.5x demand,0.0
+low,Routing,BLR,1 optimized route(s) exceed driver duty under replayed traffic (overtime),0.0
+low,Routing,CHE,2 optimized route(s) exceed driver duty under replayed traffic (overtime),0.0
+low,Routing,DEL,1 optimized route(s) exceed driver duty under replayed traffic (overtime),0.0
+low,Routing,KOL,2 optimized route(s) exceed driver duty under replayed traffic (overtime),0.0
+low,Routing,MUM,2 optimized route(s) exceed driver duty under replayed traffic (overtime),0.0
+info,Network,MUM,Defer new MFCs: no configuration has positive NPV at today's 184 parcels/day. Least-negative option p=1 (Byculla) breaks even at 6.2x volume (~1131 parcels/day).,0.0
+info,Network,DEL,Defer new MFCs: no configuration has positive NPV at today's 194 parcels/day. Least-negative option p=1 (Mayapuri) breaks even at 2.8x volume (~551 parcels/day).,0.0
+info,Network,BLR,Defer new MFCs: no configuration has positive NPV at today's 154 parcels/day. Least-negative option p=1 (Hebbal) breaks even at 8.5x volume (~1303 parcels/day).,0.0
+info,Network,CHE,Defer new MFCs: no configuration has positive NPV at today's 127 parcels/day. Least-negative option p=1 (Kolathur) breaks even at 11.4x volume (~1445 parcels/day).,0.0
+info,Network,KOL,Defer new MFCs: no configuration has positive NPV at today's 106 parcels/day. Least-negative option p=1 (Park Circus) breaks even at 6.3x volume (~673 parcels/day).,0.0

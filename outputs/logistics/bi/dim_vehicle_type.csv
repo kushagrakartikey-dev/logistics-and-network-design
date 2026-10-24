@@ -1,0 +1,4 @@
+vehicle_type,label,fleet_count_per_city,capacity_kg,speed_kmph,cost_per_km,fixed_cost_per_day,driver_wage_per_hour,max_route_minutes,restricted_zones,max_order_kg,acquisition_cost,lease_per_month,maintenance_per_km,insurance_per_year,useful_life_years,residual_value_pct
+VAN_2T,2-ton van,10,2000,26,18.0,2800,230,600,South Mumbai;Central Delhi;Central Bengaluru;Central Chennai;Central Kolkata,2000,2400000,62000,2.6,55000,6,0.15
+TEMPO_1T,1-ton tempo,10,1000,28,13.0,1900,210,600,,1000,1050000,31000,1.8,28000,6,0.15
+TWO_WHEELER,2-wheeler,5,40,30,3.5,450,160,480,,15,115000,4200,0.6,3500,4,0.1

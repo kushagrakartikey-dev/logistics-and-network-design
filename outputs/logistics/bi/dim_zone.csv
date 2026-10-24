@@ -1,0 +1,26 @@
+zone,city_id,state,observed_circuity,ml_travel_factor
+Andheri,MUM,Maharashtra,1.38,0.9919
+Bandra,MUM,Maharashtra,1.4,0.9907
+Central Bengaluru,BLR,Karnataka,1.4,1.128
+Central Chennai,CHE,Tamil Nadu,1.38,0.9104
+Central Delhi,DEL,Delhi,1.42,0.9564
+Central Kolkata,KOL,West Bengal,1.45,1.0766
+East Bengaluru,BLR,Karnataka,1.38,1.1233
+East Kolkata,KOL,West Bengal,1.25,1.039
+Gurugram,DEL,Haryana,1.3,0.9289
+Howrah,KOL,West Bengal,1.5,1.1016
+Navi Mumbai,MUM,Maharashtra,1.25,0.9644
+Noida,DEL,Uttar Pradesh,1.24,0.9097
+North Bengaluru,BLR,Karnataka,1.3,1.1079
+North Chennai,CHE,Tamil Nadu,1.33,0.8993
+North Kolkata,KOL,West Bengal,1.4,1.0519
+OMR Corridor,CHE,Tamil Nadu,1.22,0.8498
+South Bengaluru,BLR,Karnataka,1.35,1.1128
+South Chennai,CHE,Tamil Nadu,1.32,0.8803
+South Delhi,DEL,Delhi,1.36,0.9295
+South Kolkata,KOL,West Bengal,1.36,1.058
+South Mumbai,MUM,Maharashtra,1.45,1.0184
+Thane,MUM,Maharashtra,1.3,0.9799
+West Bengaluru,BLR,Karnataka,1.32,1.1113
+West Chennai,CHE,Tamil Nadu,1.3,0.8776
+West Delhi,DEL,Delhi,1.33,0.9429

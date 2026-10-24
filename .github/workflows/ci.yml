@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: pip install -r requirements.txt
+      - name: Lint
+        run: ruff check src tests dashboard run_demo.py
+      - name: Unit and integration tests
+        run: pytest
+      - name: Pipeline smoke run (reduced budgets) and asset validation
+        run: |
+          python run_demo.py --modules all --fast --export-reports
+          python -c "from openpyxl import load_workbook; wb = load_workbook('outputs/logistics_and_network_design.xlsx'); assert len(wb.sheetnames) == 15 and wb.sheetnames[-1] == 'Executive Dashboard'"
+          python -c "import json; p = json.load(open('dashboard/static/data/payload.json')); assert len(p['meta']['cities']) == 5"

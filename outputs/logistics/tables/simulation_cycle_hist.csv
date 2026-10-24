@@ -1,0 +1,961 @@
+city_id,scenario,bin_start_min,orders
+MUM,Baseline staffing,0.0,33
+MUM,Baseline staffing,10.0,445
+MUM,Baseline staffing,20.0,1400
+MUM,Baseline staffing,30.0,2868
+MUM,Baseline staffing,40.0,3098
+MUM,Baseline staffing,50.0,3048
+MUM,Baseline staffing,60.0,3180
+MUM,Baseline staffing,70.0,3424
+MUM,Baseline staffing,80.0,4049
+MUM,Baseline staffing,90.0,4559
+MUM,Baseline staffing,100.0,4829
+MUM,Baseline staffing,110.0,4961
+MUM,Baseline staffing,120.0,4822
+MUM,Baseline staffing,130.0,4483
+MUM,Baseline staffing,140.0,3851
+MUM,Baseline staffing,150.0,2636
+MUM,Baseline staffing,160.0,1818
+MUM,Baseline staffing,170.0,1187
+MUM,Baseline staffing,180.0,897
+MUM,Baseline staffing,190.0,486
+MUM,Baseline staffing,200.0,250
+MUM,Baseline staffing,210.0,120
+MUM,Baseline staffing,220.0,51
+MUM,Baseline staffing,230.0,13
+MUM,Baseline staffing,240.0,5
+MUM,Baseline staffing,250.0,1
+MUM,Baseline staffing,260.0,0
+MUM,Baseline staffing,270.0,0
+MUM,Baseline staffing,280.0,0
+MUM,Baseline staffing,290.0,0
+MUM,Baseline staffing,300.0,0
+MUM,Baseline staffing,310.0,0
+MUM,Baseline staffing,320.0,0
+MUM,Baseline staffing,330.0,0
+MUM,Baseline staffing,340.0,0
+MUM,Baseline staffing,350.0,0
+MUM,Baseline staffing,360.0,0
+MUM,Baseline staffing,370.0,0
+MUM,Baseline staffing,380.0,0
+MUM,Baseline staffing,390.0,0
+MUM,Baseline staffing,400.0,0
+MUM,Baseline staffing,410.0,0
+MUM,Baseline staffing,420.0,0
+MUM,Baseline staffing,430.0,0
+MUM,Baseline staffing,440.0,0
+MUM,Baseline staffing,450.0,0
+MUM,Baseline staffing,460.0,0
+MUM,Baseline staffing,470.0,0
+MUM,Optimized staffing,0.0,58
+MUM,Optimized staffing,10.0,1066
+MUM,Optimized staffing,20.0,4368
+MUM,Optimized staffing,30.0,10773
+MUM,Optimized staffing,40.0,10639
+MUM,Optimized staffing,50.0,9056
+MUM,Optimized staffing,60.0,6991
+MUM,Optimized staffing,70.0,5336
+MUM,Optimized staffing,80.0,3481
+MUM,Optimized staffing,90.0,2187
+MUM,Optimized staffing,100.0,1304
+MUM,Optimized staffing,110.0,668
+MUM,Optimized staffing,120.0,332
+MUM,Optimized staffing,130.0,133
+MUM,Optimized staffing,140.0,47
+MUM,Optimized staffing,150.0,11
+MUM,Optimized staffing,160.0,1
+MUM,Optimized staffing,170.0,2
+MUM,Optimized staffing,180.0,0
+MUM,Optimized staffing,190.0,0
+MUM,Optimized staffing,200.0,0
+MUM,Optimized staffing,210.0,0
+MUM,Optimized staffing,220.0,0
+MUM,Optimized staffing,230.0,0
+MUM,Optimized staffing,240.0,0
+MUM,Optimized staffing,250.0,0
+MUM,Optimized staffing,260.0,0
+MUM,Optimized staffing,270.0,0
+MUM,Optimized staffing,280.0,0
+MUM,Optimized staffing,290.0,0
+MUM,Optimized staffing,300.0,0
+MUM,Optimized staffing,310.0,0
+MUM,Optimized staffing,320.0,0
+MUM,Optimized staffing,330.0,0
+MUM,Optimized staffing,340.0,0
+MUM,Optimized staffing,350.0,0
+MUM,Optimized staffing,360.0,0
+MUM,Optimized staffing,370.0,0
+MUM,Optimized staffing,380.0,0
+MUM,Optimized staffing,390.0,0
+MUM,Optimized staffing,400.0,0
+MUM,Optimized staffing,410.0,0
+MUM,Optimized staffing,420.0,0
+MUM,Optimized staffing,430.0,0
+MUM,Optimized staffing,440.0,0
+MUM,Optimized staffing,450.0,0
+MUM,Optimized staffing,460.0,0
+MUM,Optimized staffing,470.0,0
+MUM,Diwali peak - baseline staffing,0.0,27
+MUM,Diwali peak - baseline staffing,10.0,491
+MUM,Diwali peak - baseline staffing,20.0,1008
+MUM,Diwali peak - baseline staffing,30.0,2307
+MUM,Diwali peak - baseline staffing,40.0,2407
+MUM,Diwali peak - baseline staffing,50.0,2088
+MUM,Diwali peak - baseline staffing,60.0,1850
+MUM,Diwali peak - baseline staffing,70.0,1666
+MUM,Diwali peak - baseline staffing,80.0,1587
+MUM,Diwali peak - baseline staffing,90.0,1528
+MUM,Diwali peak - baseline staffing,100.0,1421
+MUM,Diwali peak - baseline staffing,110.0,1461
+MUM,Diwali peak - baseline staffing,120.0,1410
+MUM,Diwali peak - baseline staffing,130.0,1386
+MUM,Diwali peak - baseline staffing,140.0,1401
+MUM,Diwali peak - baseline staffing,150.0,1309
+MUM,Diwali peak - baseline staffing,160.0,1410
+MUM,Diwali peak - baseline staffing,170.0,1358
+MUM,Diwali peak - baseline staffing,180.0,1371
+MUM,Diwali peak - baseline staffing,190.0,1359
+MUM,Diwali peak - baseline staffing,200.0,1327
+MUM,Diwali peak - baseline staffing,210.0,1307
+MUM,Diwali peak - baseline staffing,220.0,1343
+MUM,Diwali peak - baseline staffing,230.0,1349
+MUM,Diwali peak - baseline staffing,240.0,1314
+MUM,Diwali peak - baseline staffing,250.0,1313
+MUM,Diwali peak - baseline staffing,260.0,1321
+MUM,Diwali peak - baseline staffing,270.0,1329
+MUM,Diwali peak - baseline staffing,280.0,1352
+MUM,Diwali peak - baseline staffing,290.0,1410
+MUM,Diwali peak - baseline staffing,300.0,1391
+MUM,Diwali peak - baseline staffing,310.0,1472
+MUM,Diwali peak - baseline staffing,320.0,1516
+MUM,Diwali peak - baseline staffing,330.0,1612
+MUM,Diwali peak - baseline staffing,340.0,1610
+MUM,Diwali peak - baseline staffing,350.0,1732
+MUM,Diwali peak - baseline staffing,360.0,1819
+MUM,Diwali peak - baseline staffing,370.0,2086
+MUM,Diwali peak - baseline staffing,380.0,2175
+MUM,Diwali peak - baseline staffing,390.0,2127
+MUM,Diwali peak - baseline staffing,400.0,2325
+MUM,Diwali peak - baseline staffing,410.0,2313
+MUM,Diwali peak - baseline staffing,420.0,2284
+MUM,Diwali peak - baseline staffing,430.0,2147
+MUM,Diwali peak - baseline staffing,440.0,1944
+MUM,Diwali peak - baseline staffing,450.0,1671
+MUM,Diwali peak - baseline staffing,460.0,1251
+MUM,Diwali peak - baseline staffing,470.0,2214
+MUM,Diwali peak - peak roster,0.0,110
+MUM,Diwali peak - peak roster,10.0,1535
+MUM,Diwali peak - peak roster,20.0,4390
+MUM,Diwali peak - peak roster,30.0,13517
+MUM,Diwali peak - peak roster,40.0,14968
+MUM,Diwali peak - peak roster,50.0,14758
+MUM,Diwali peak - peak roster,60.0,14316
+MUM,Diwali peak - peak roster,70.0,13675
+MUM,Diwali peak - peak roster,80.0,11501
+MUM,Diwali peak - peak roster,90.0,8710
+MUM,Diwali peak - peak roster,100.0,6115
+MUM,Diwali peak - peak roster,110.0,3692
+MUM,Diwali peak - peak roster,120.0,2013
+MUM,Diwali peak - peak roster,130.0,1047
+MUM,Diwali peak - peak roster,140.0,483
+MUM,Diwali peak - peak roster,150.0,159
+MUM,Diwali peak - peak roster,160.0,54
+MUM,Diwali peak - peak roster,170.0,22
+MUM,Diwali peak - peak roster,180.0,3
+MUM,Diwali peak - peak roster,190.0,2
+MUM,Diwali peak - peak roster,200.0,0
+MUM,Diwali peak - peak roster,210.0,0
+MUM,Diwali peak - peak roster,220.0,0
+MUM,Diwali peak - peak roster,230.0,0
+MUM,Diwali peak - peak roster,240.0,0
+MUM,Diwali peak - peak roster,250.0,0
+MUM,Diwali peak - peak roster,260.0,0
+MUM,Diwali peak - peak roster,270.0,0
+MUM,Diwali peak - peak roster,280.0,0
+MUM,Diwali peak - peak roster,290.0,0
+MUM,Diwali peak - peak roster,300.0,0
+MUM,Diwali peak - peak roster,310.0,0
+MUM,Diwali peak - peak roster,320.0,0
+MUM,Diwali peak - peak roster,330.0,0
+MUM,Diwali peak - peak roster,340.0,0
+MUM,Diwali peak - peak roster,350.0,0
+MUM,Diwali peak - peak roster,360.0,0
+MUM,Diwali peak - peak roster,370.0,0
+MUM,Diwali peak - peak roster,380.0,0
+MUM,Diwali peak - peak roster,390.0,0
+MUM,Diwali peak - peak roster,400.0,0
+MUM,Diwali peak - peak roster,410.0,0
+MUM,Diwali peak - peak roster,420.0,0
+MUM,Diwali peak - peak roster,430.0,0
+MUM,Diwali peak - peak roster,440.0,0
+MUM,Diwali peak - peak roster,450.0,0
+MUM,Diwali peak - peak roster,460.0,0
+MUM,Diwali peak - peak roster,470.0,0
+DEL,Baseline staffing,0.0,33
+DEL,Baseline staffing,10.0,605
+DEL,Baseline staffing,20.0,1595
+DEL,Baseline staffing,30.0,3220
+DEL,Baseline staffing,40.0,3747
+DEL,Baseline staffing,50.0,3895
+DEL,Baseline staffing,60.0,4246
+DEL,Baseline staffing,70.0,4908
+DEL,Baseline staffing,80.0,5199
+DEL,Baseline staffing,90.0,5633
+DEL,Baseline staffing,100.0,5775
+DEL,Baseline staffing,110.0,5049
+DEL,Baseline staffing,120.0,3678
+DEL,Baseline staffing,130.0,2484
+DEL,Baseline staffing,140.0,1467
+DEL,Baseline staffing,150.0,973
+DEL,Baseline staffing,160.0,569
+DEL,Baseline staffing,170.0,319
+DEL,Baseline staffing,180.0,158
+DEL,Baseline staffing,190.0,59
+DEL,Baseline staffing,200.0,42
+DEL,Baseline staffing,210.0,6
+DEL,Baseline staffing,220.0,5
+DEL,Baseline staffing,230.0,1
+DEL,Baseline staffing,240.0,0
+DEL,Baseline staffing,250.0,0
+DEL,Baseline staffing,260.0,0
+DEL,Baseline staffing,270.0,0
+DEL,Baseline staffing,280.0,0
+DEL,Baseline staffing,290.0,0
+DEL,Baseline staffing,300.0,0
+DEL,Baseline staffing,310.0,0
+DEL,Baseline staffing,320.0,0
+DEL,Baseline staffing,330.0,0
+DEL,Baseline staffing,340.0,0
+DEL,Baseline staffing,350.0,0
+DEL,Baseline staffing,360.0,0
+DEL,Baseline staffing,370.0,0
+DEL,Baseline staffing,380.0,0
+DEL,Baseline staffing,390.0,0
+DEL,Baseline staffing,400.0,0
+DEL,Baseline staffing,410.0,0
+DEL,Baseline staffing,420.0,0
+DEL,Baseline staffing,430.0,0
+DEL,Baseline staffing,440.0,0
+DEL,Baseline staffing,450.0,0
+DEL,Baseline staffing,460.0,0
+DEL,Baseline staffing,470.0,0
+DEL,Optimized staffing,0.0,39
+DEL,Optimized staffing,10.0,1250
+DEL,Optimized staffing,20.0,4999
+DEL,Optimized staffing,30.0,12086
+DEL,Optimized staffing,40.0,10889
+DEL,Optimized staffing,50.0,8638
+DEL,Optimized staffing,60.0,6468
+DEL,Optimized staffing,70.0,4182
+DEL,Optimized staffing,80.0,2379
+DEL,Optimized staffing,90.0,1296
+DEL,Optimized staffing,100.0,598
+DEL,Optimized staffing,110.0,287
+DEL,Optimized staffing,120.0,111
+DEL,Optimized staffing,130.0,42
+DEL,Optimized staffing,140.0,13
+DEL,Optimized staffing,150.0,4
+DEL,Optimized staffing,160.0,2
+DEL,Optimized staffing,170.0,0
+DEL,Optimized staffing,180.0,0
+DEL,Optimized staffing,190.0,0
+DEL,Optimized staffing,200.0,0
+DEL,Optimized staffing,210.0,0
+DEL,Optimized staffing,220.0,0
+DEL,Optimized staffing,230.0,0
+DEL,Optimized staffing,240.0,0
+DEL,Optimized staffing,250.0,0
+DEL,Optimized staffing,260.0,0
+DEL,Optimized staffing,270.0,0
+DEL,Optimized staffing,280.0,0
+DEL,Optimized staffing,290.0,0
+DEL,Optimized staffing,300.0,0
+DEL,Optimized staffing,310.0,0
+DEL,Optimized staffing,320.0,0
+DEL,Optimized staffing,330.0,0
+DEL,Optimized staffing,340.0,0
+DEL,Optimized staffing,350.0,0
+DEL,Optimized staffing,360.0,0
+DEL,Optimized staffing,370.0,0
+DEL,Optimized staffing,380.0,0
+DEL,Optimized staffing,390.0,0
+DEL,Optimized staffing,400.0,0
+DEL,Optimized staffing,410.0,0
+DEL,Optimized staffing,420.0,0
+DEL,Optimized staffing,430.0,0
+DEL,Optimized staffing,440.0,0
+DEL,Optimized staffing,450.0,0
+DEL,Optimized staffing,460.0,0
+DEL,Optimized staffing,470.0,0
+DEL,Diwali peak - baseline staffing,0.0,7
+DEL,Diwali peak - baseline staffing,10.0,440
+DEL,Diwali peak - baseline staffing,20.0,1231
+DEL,Diwali peak - baseline staffing,30.0,2203
+DEL,Diwali peak - baseline staffing,40.0,2553
+DEL,Diwali peak - baseline staffing,50.0,2136
+DEL,Diwali peak - baseline staffing,60.0,1937
+DEL,Diwali peak - baseline staffing,70.0,1794
+DEL,Diwali peak - baseline staffing,80.0,1617
+DEL,Diwali peak - baseline staffing,90.0,1534
+DEL,Diwali peak - baseline staffing,100.0,1503
+DEL,Diwali peak - baseline staffing,110.0,1382
+DEL,Diwali peak - baseline staffing,120.0,1469
+DEL,Diwali peak - baseline staffing,130.0,1516
+DEL,Diwali peak - baseline staffing,140.0,1482
+DEL,Diwali peak - baseline staffing,150.0,1394
+DEL,Diwali peak - baseline staffing,160.0,1402
+DEL,Diwali peak - baseline staffing,170.0,1378
+DEL,Diwali peak - baseline staffing,180.0,1327
+DEL,Diwali peak - baseline staffing,190.0,1354
+DEL,Diwali peak - baseline staffing,200.0,1330
+DEL,Diwali peak - baseline staffing,210.0,1360
+DEL,Diwali peak - baseline staffing,220.0,1338
+DEL,Diwali peak - baseline staffing,230.0,1343
+DEL,Diwali peak - baseline staffing,240.0,1387
+DEL,Diwali peak - baseline staffing,250.0,1431
+DEL,Diwali peak - baseline staffing,260.0,1471
+DEL,Diwali peak - baseline staffing,270.0,1487
+DEL,Diwali peak - baseline staffing,280.0,1573
+DEL,Diwali peak - baseline staffing,290.0,1673
+DEL,Diwali peak - baseline staffing,300.0,1718
+DEL,Diwali peak - baseline staffing,310.0,1843
+DEL,Diwali peak - baseline staffing,320.0,1890
+DEL,Diwali peak - baseline staffing,330.0,2013
+DEL,Diwali peak - baseline staffing,340.0,2253
+DEL,Diwali peak - baseline staffing,350.0,2389
+DEL,Diwali peak - baseline staffing,360.0,2447
+DEL,Diwali peak - baseline staffing,370.0,2389
+DEL,Diwali peak - baseline staffing,380.0,2403
+DEL,Diwali peak - baseline staffing,390.0,2372
+DEL,Diwali peak - baseline staffing,400.0,2375
+DEL,Diwali peak - baseline staffing,410.0,2185
+DEL,Diwali peak - baseline staffing,420.0,1885
+DEL,Diwali peak - baseline staffing,430.0,1526
+DEL,Diwali peak - baseline staffing,440.0,1071
+DEL,Diwali peak - baseline staffing,450.0,728
+DEL,Diwali peak - baseline staffing,460.0,424
+DEL,Diwali peak - baseline staffing,470.0,510
+DEL,Diwali peak - peak roster,0.0,59
+DEL,Diwali peak - peak roster,10.0,1914
+DEL,Diwali peak - peak roster,20.0,7838
+DEL,Diwali peak - peak roster,30.0,22170
+DEL,Diwali peak - peak roster,40.0,18690
+DEL,Diwali peak - peak roster,50.0,14776
+DEL,Diwali peak - peak roster,60.0,12812
+DEL,Diwali peak - peak roster,70.0,10434
+DEL,Diwali peak - peak roster,80.0,7553
+DEL,Diwali peak - peak roster,90.0,4405
+DEL,Diwali peak - peak roster,100.0,2472
+DEL,Diwali peak - peak roster,110.0,1103
+DEL,Diwali peak - peak roster,120.0,451
+DEL,Diwali peak - peak roster,130.0,132
+DEL,Diwali peak - peak roster,140.0,43
+DEL,Diwali peak - peak roster,150.0,11
+DEL,Diwali peak - peak roster,160.0,1
+DEL,Diwali peak - peak roster,170.0,0
+DEL,Diwali peak - peak roster,180.0,0
+DEL,Diwali peak - peak roster,190.0,0
+DEL,Diwali peak - peak roster,200.0,0
+DEL,Diwali peak - peak roster,210.0,0
+DEL,Diwali peak - peak roster,220.0,0
+DEL,Diwali peak - peak roster,230.0,0
+DEL,Diwali peak - peak roster,240.0,0
+DEL,Diwali peak - peak roster,250.0,0
+DEL,Diwali peak - peak roster,260.0,0
+DEL,Diwali peak - peak roster,270.0,0
+DEL,Diwali peak - peak roster,280.0,0
+DEL,Diwali peak - peak roster,290.0,0
+DEL,Diwali peak - peak roster,300.0,0
+DEL,Diwali peak - peak roster,310.0,0
+DEL,Diwali peak - peak roster,320.0,0
+DEL,Diwali peak - peak roster,330.0,0
+DEL,Diwali peak - peak roster,340.0,0
+DEL,Diwali peak - peak roster,350.0,0
+DEL,Diwali peak - peak roster,360.0,0
+DEL,Diwali peak - peak roster,370.0,0
+DEL,Diwali peak - peak roster,380.0,0
+DEL,Diwali peak - peak roster,390.0,0
+DEL,Diwali peak - peak roster,400.0,0
+DEL,Diwali peak - peak roster,410.0,0
+DEL,Diwali peak - peak roster,420.0,0
+DEL,Diwali peak - peak roster,430.0,0
+DEL,Diwali peak - peak roster,440.0,0
+DEL,Diwali peak - peak roster,450.0,0
+DEL,Diwali peak - peak roster,460.0,0
+DEL,Diwali peak - peak roster,470.0,0
+BLR,Baseline staffing,0.0,35
+BLR,Baseline staffing,10.0,766
+BLR,Baseline staffing,20.0,2718
+BLR,Baseline staffing,30.0,6735
+BLR,Baseline staffing,40.0,7872
+BLR,Baseline staffing,50.0,7051
+BLR,Baseline staffing,60.0,5846
+BLR,Baseline staffing,70.0,4687
+BLR,Baseline staffing,80.0,3082
+BLR,Baseline staffing,90.0,1913
+BLR,Baseline staffing,100.0,1144
+BLR,Baseline staffing,110.0,580
+BLR,Baseline staffing,120.0,299
+BLR,Baseline staffing,130.0,138
+BLR,Baseline staffing,140.0,48
+BLR,Baseline staffing,150.0,16
+BLR,Baseline staffing,160.0,7
+BLR,Baseline staffing,170.0,2
+BLR,Baseline staffing,180.0,0
+BLR,Baseline staffing,190.0,0
+BLR,Baseline staffing,200.0,0
+BLR,Baseline staffing,210.0,0
+BLR,Baseline staffing,220.0,0
+BLR,Baseline staffing,230.0,0
+BLR,Baseline staffing,240.0,0
+BLR,Baseline staffing,250.0,0
+BLR,Baseline staffing,260.0,0
+BLR,Baseline staffing,270.0,0
+BLR,Baseline staffing,280.0,0
+BLR,Baseline staffing,290.0,0
+BLR,Baseline staffing,300.0,0
+BLR,Baseline staffing,310.0,0
+BLR,Baseline staffing,320.0,0
+BLR,Baseline staffing,330.0,0
+BLR,Baseline staffing,340.0,0
+BLR,Baseline staffing,350.0,0
+BLR,Baseline staffing,360.0,0
+BLR,Baseline staffing,370.0,0
+BLR,Baseline staffing,380.0,0
+BLR,Baseline staffing,390.0,0
+BLR,Baseline staffing,400.0,0
+BLR,Baseline staffing,410.0,0
+BLR,Baseline staffing,420.0,0
+BLR,Baseline staffing,430.0,0
+BLR,Baseline staffing,440.0,0
+BLR,Baseline staffing,450.0,0
+BLR,Baseline staffing,460.0,0
+BLR,Baseline staffing,470.0,0
+BLR,Optimized staffing,0.0,32
+BLR,Optimized staffing,10.0,667
+BLR,Optimized staffing,20.0,2777
+BLR,Optimized staffing,30.0,7084
+BLR,Optimized staffing,40.0,7604
+BLR,Optimized staffing,50.0,6729
+BLR,Optimized staffing,60.0,5811
+BLR,Optimized staffing,70.0,4481
+BLR,Optimized staffing,80.0,3202
+BLR,Optimized staffing,90.0,1974
+BLR,Optimized staffing,100.0,1182
+BLR,Optimized staffing,110.0,605
+BLR,Optimized staffing,120.0,364
+BLR,Optimized staffing,130.0,187
+BLR,Optimized staffing,140.0,89
+BLR,Optimized staffing,150.0,27
+BLR,Optimized staffing,160.0,11
+BLR,Optimized staffing,170.0,4
+BLR,Optimized staffing,180.0,1
+BLR,Optimized staffing,190.0,0
+BLR,Optimized staffing,200.0,0
+BLR,Optimized staffing,210.0,0
+BLR,Optimized staffing,220.0,0
+BLR,Optimized staffing,230.0,0
+BLR,Optimized staffing,240.0,0
+BLR,Optimized staffing,250.0,0
+BLR,Optimized staffing,260.0,0
+BLR,Optimized staffing,270.0,0
+BLR,Optimized staffing,280.0,0
+BLR,Optimized staffing,290.0,0
+BLR,Optimized staffing,300.0,0
+BLR,Optimized staffing,310.0,0
+BLR,Optimized staffing,320.0,0
+BLR,Optimized staffing,330.0,0
+BLR,Optimized staffing,340.0,0
+BLR,Optimized staffing,350.0,0
+BLR,Optimized staffing,360.0,0
+BLR,Optimized staffing,370.0,0
+BLR,Optimized staffing,380.0,0
+BLR,Optimized staffing,390.0,0
+BLR,Optimized staffing,400.0,0
+BLR,Optimized staffing,410.0,0
+BLR,Optimized staffing,420.0,0
+BLR,Optimized staffing,430.0,0
+BLR,Optimized staffing,440.0,0
+BLR,Optimized staffing,450.0,0
+BLR,Optimized staffing,460.0,0
+BLR,Optimized staffing,470.0,0
+BLR,Diwali peak - baseline staffing,0.0,10
+BLR,Diwali peak - baseline staffing,10.0,282
+BLR,Diwali peak - baseline staffing,20.0,1194
+BLR,Diwali peak - baseline staffing,30.0,2747
+BLR,Diwali peak - baseline staffing,40.0,2792
+BLR,Diwali peak - baseline staffing,50.0,2307
+BLR,Diwali peak - baseline staffing,60.0,2032
+BLR,Diwali peak - baseline staffing,70.0,1768
+BLR,Diwali peak - baseline staffing,80.0,1734
+BLR,Diwali peak - baseline staffing,90.0,1613
+BLR,Diwali peak - baseline staffing,100.0,1636
+BLR,Diwali peak - baseline staffing,110.0,1664
+BLR,Diwali peak - baseline staffing,120.0,1679
+BLR,Diwali peak - baseline staffing,130.0,1649
+BLR,Diwali peak - baseline staffing,140.0,1687
+BLR,Diwali peak - baseline staffing,150.0,1649
+BLR,Diwali peak - baseline staffing,160.0,1735
+BLR,Diwali peak - baseline staffing,170.0,1798
+BLR,Diwali peak - baseline staffing,180.0,1840
+BLR,Diwali peak - baseline staffing,190.0,1903
+BLR,Diwali peak - baseline staffing,200.0,2077
+BLR,Diwali peak - baseline staffing,210.0,2244
+BLR,Diwali peak - baseline staffing,220.0,2559
+BLR,Diwali peak - baseline staffing,230.0,2781
+BLR,Diwali peak - baseline staffing,240.0,3010
+BLR,Diwali peak - baseline staffing,250.0,3161
+BLR,Diwali peak - baseline staffing,260.0,3032
+BLR,Diwali peak - baseline staffing,270.0,2942
+BLR,Diwali peak - baseline staffing,280.0,2974
+BLR,Diwali peak - baseline staffing,290.0,2738
+BLR,Diwali peak - baseline staffing,300.0,2445
+BLR,Diwali peak - baseline staffing,310.0,2221
+BLR,Diwali peak - baseline staffing,320.0,2094
+BLR,Diwali peak - baseline staffing,330.0,1921
+BLR,Diwali peak - baseline staffing,340.0,1576
+BLR,Diwali peak - baseline staffing,350.0,1356
+BLR,Diwali peak - baseline staffing,360.0,1054
+BLR,Diwali peak - baseline staffing,370.0,765
+BLR,Diwali peak - baseline staffing,380.0,455
+BLR,Diwali peak - baseline staffing,390.0,239
+BLR,Diwali peak - baseline staffing,400.0,59
+BLR,Diwali peak - baseline staffing,410.0,19
+BLR,Diwali peak - baseline staffing,420.0,7
+BLR,Diwali peak - baseline staffing,430.0,1
+BLR,Diwali peak - baseline staffing,440.0,0
+BLR,Diwali peak - baseline staffing,450.0,0
+BLR,Diwali peak - baseline staffing,460.0,0
+BLR,Diwali peak - baseline staffing,470.0,0
+BLR,Diwali peak - peak roster,0.0,42
+BLR,Diwali peak - peak roster,10.0,1278
+BLR,Diwali peak - peak roster,20.0,6704
+BLR,Diwali peak - peak roster,30.0,19407
+BLR,Diwali peak - peak roster,40.0,18536
+BLR,Diwali peak - peak roster,50.0,14633
+BLR,Diwali peak - peak roster,60.0,10921
+BLR,Diwali peak - peak roster,70.0,7039
+BLR,Diwali peak - peak roster,80.0,3990
+BLR,Diwali peak - peak roster,90.0,2002
+BLR,Diwali peak - peak roster,100.0,951
+BLR,Diwali peak - peak roster,110.0,345
+BLR,Diwali peak - peak roster,120.0,118
+BLR,Diwali peak - peak roster,130.0,42
+BLR,Diwali peak - peak roster,140.0,6
+BLR,Diwali peak - peak roster,150.0,2
+BLR,Diwali peak - peak roster,160.0,0
+BLR,Diwali peak - peak roster,170.0,0
+BLR,Diwali peak - peak roster,180.0,0
+BLR,Diwali peak - peak roster,190.0,0
+BLR,Diwali peak - peak roster,200.0,0
+BLR,Diwali peak - peak roster,210.0,0
+BLR,Diwali peak - peak roster,220.0,0
+BLR,Diwali peak - peak roster,230.0,0
+BLR,Diwali peak - peak roster,240.0,0
+BLR,Diwali peak - peak roster,250.0,0
+BLR,Diwali peak - peak roster,260.0,0
+BLR,Diwali peak - peak roster,270.0,0
+BLR,Diwali peak - peak roster,280.0,0
+BLR,Diwali peak - peak roster,290.0,0
+BLR,Diwali peak - peak roster,300.0,0
+BLR,Diwali peak - peak roster,310.0,0
+BLR,Diwali peak - peak roster,320.0,0
+BLR,Diwali peak - peak roster,330.0,0
+BLR,Diwali peak - peak roster,340.0,0
+BLR,Diwali peak - peak roster,350.0,0
+BLR,Diwali peak - peak roster,360.0,0
+BLR,Diwali peak - peak roster,370.0,0
+BLR,Diwali peak - peak roster,380.0,0
+BLR,Diwali peak - peak roster,390.0,0
+BLR,Diwali peak - peak roster,400.0,0
+BLR,Diwali peak - peak roster,410.0,0
+BLR,Diwali peak - peak roster,420.0,0
+BLR,Diwali peak - peak roster,430.0,0
+BLR,Diwali peak - peak roster,440.0,0
+BLR,Diwali peak - peak roster,450.0,0
+BLR,Diwali peak - peak roster,460.0,0
+BLR,Diwali peak - peak roster,470.0,0
+CHE,Baseline staffing,0.0,5
+CHE,Baseline staffing,10.0,260
+CHE,Baseline staffing,20.0,792
+CHE,Baseline staffing,30.0,1304
+CHE,Baseline staffing,40.0,1486
+CHE,Baseline staffing,50.0,1151
+CHE,Baseline staffing,60.0,1098
+CHE,Baseline staffing,70.0,1022
+CHE,Baseline staffing,80.0,1003
+CHE,Baseline staffing,90.0,976
+CHE,Baseline staffing,100.0,953
+CHE,Baseline staffing,110.0,931
+CHE,Baseline staffing,120.0,1006
+CHE,Baseline staffing,130.0,1066
+CHE,Baseline staffing,140.0,1194
+CHE,Baseline staffing,150.0,1365
+CHE,Baseline staffing,160.0,1393
+CHE,Baseline staffing,170.0,1550
+CHE,Baseline staffing,180.0,1732
+CHE,Baseline staffing,190.0,1778
+CHE,Baseline staffing,200.0,1683
+CHE,Baseline staffing,210.0,1763
+CHE,Baseline staffing,220.0,1730
+CHE,Baseline staffing,230.0,1634
+CHE,Baseline staffing,240.0,1560
+CHE,Baseline staffing,250.0,1368
+CHE,Baseline staffing,260.0,1229
+CHE,Baseline staffing,270.0,1174
+CHE,Baseline staffing,280.0,960
+CHE,Baseline staffing,290.0,824
+CHE,Baseline staffing,300.0,711
+CHE,Baseline staffing,310.0,560
+CHE,Baseline staffing,320.0,392
+CHE,Baseline staffing,330.0,282
+CHE,Baseline staffing,340.0,187
+CHE,Baseline staffing,350.0,138
+CHE,Baseline staffing,360.0,73
+CHE,Baseline staffing,370.0,42
+CHE,Baseline staffing,380.0,30
+CHE,Baseline staffing,390.0,16
+CHE,Baseline staffing,400.0,3
+CHE,Baseline staffing,410.0,1
+CHE,Baseline staffing,420.0,0
+CHE,Baseline staffing,430.0,0
+CHE,Baseline staffing,440.0,0
+CHE,Baseline staffing,450.0,0
+CHE,Baseline staffing,460.0,0
+CHE,Baseline staffing,470.0,0
+CHE,Optimized staffing,0.0,28
+CHE,Optimized staffing,10.0,878
+CHE,Optimized staffing,20.0,3494
+CHE,Optimized staffing,30.0,8253
+CHE,Optimized staffing,40.0,8491
+CHE,Optimized staffing,50.0,6958
+CHE,Optimized staffing,60.0,5230
+CHE,Optimized staffing,70.0,3301
+CHE,Optimized staffing,80.0,1999
+CHE,Optimized staffing,90.0,988
+CHE,Optimized staffing,100.0,510
+CHE,Optimized staffing,110.0,244
+CHE,Optimized staffing,120.0,88
+CHE,Optimized staffing,130.0,35
+CHE,Optimized staffing,140.0,10
+CHE,Optimized staffing,150.0,6
+CHE,Optimized staffing,160.0,0
+CHE,Optimized staffing,170.0,0
+CHE,Optimized staffing,180.0,0
+CHE,Optimized staffing,190.0,0
+CHE,Optimized staffing,200.0,0
+CHE,Optimized staffing,210.0,0
+CHE,Optimized staffing,220.0,0
+CHE,Optimized staffing,230.0,0
+CHE,Optimized staffing,240.0,0
+CHE,Optimized staffing,250.0,0
+CHE,Optimized staffing,260.0,0
+CHE,Optimized staffing,270.0,0
+CHE,Optimized staffing,280.0,0
+CHE,Optimized staffing,290.0,0
+CHE,Optimized staffing,300.0,0
+CHE,Optimized staffing,310.0,0
+CHE,Optimized staffing,320.0,0
+CHE,Optimized staffing,330.0,0
+CHE,Optimized staffing,340.0,0
+CHE,Optimized staffing,350.0,0
+CHE,Optimized staffing,360.0,0
+CHE,Optimized staffing,370.0,0
+CHE,Optimized staffing,380.0,0
+CHE,Optimized staffing,390.0,0
+CHE,Optimized staffing,400.0,0
+CHE,Optimized staffing,410.0,0
+CHE,Optimized staffing,420.0,0
+CHE,Optimized staffing,430.0,0
+CHE,Optimized staffing,440.0,0
+CHE,Optimized staffing,450.0,0
+CHE,Optimized staffing,460.0,0
+CHE,Optimized staffing,470.0,0
+CHE,Diwali peak - baseline staffing,0.0,12
+CHE,Diwali peak - baseline staffing,10.0,225
+CHE,Diwali peak - baseline staffing,20.0,665
+CHE,Diwali peak - baseline staffing,30.0,1178
+CHE,Diwali peak - baseline staffing,40.0,1171
+CHE,Diwali peak - baseline staffing,50.0,1029
+CHE,Diwali peak - baseline staffing,60.0,985
+CHE,Diwali peak - baseline staffing,70.0,790
+CHE,Diwali peak - baseline staffing,80.0,815
+CHE,Diwali peak - baseline staffing,90.0,734
+CHE,Diwali peak - baseline staffing,100.0,688
+CHE,Diwali peak - baseline staffing,110.0,725
+CHE,Diwali peak - baseline staffing,120.0,719
+CHE,Diwali peak - baseline staffing,130.0,676
+CHE,Diwali peak - baseline staffing,140.0,660
+CHE,Diwali peak - baseline staffing,150.0,675
+CHE,Diwali peak - baseline staffing,160.0,672
+CHE,Diwali peak - baseline staffing,170.0,674
+CHE,Diwali peak - baseline staffing,180.0,693
+CHE,Diwali peak - baseline staffing,190.0,650
+CHE,Diwali peak - baseline staffing,200.0,652
+CHE,Diwali peak - baseline staffing,210.0,694
+CHE,Diwali peak - baseline staffing,220.0,652
+CHE,Diwali peak - baseline staffing,230.0,669
+CHE,Diwali peak - baseline staffing,240.0,672
+CHE,Diwali peak - baseline staffing,250.0,697
+CHE,Diwali peak - baseline staffing,260.0,649
+CHE,Diwali peak - baseline staffing,270.0,621
+CHE,Diwali peak - baseline staffing,280.0,670
+CHE,Diwali peak - baseline staffing,290.0,668
+CHE,Diwali peak - baseline staffing,300.0,611
+CHE,Diwali peak - baseline staffing,310.0,632
+CHE,Diwali peak - baseline staffing,320.0,607
+CHE,Diwali peak - baseline staffing,330.0,683
+CHE,Diwali peak - baseline staffing,340.0,649
+CHE,Diwali peak - baseline staffing,350.0,640
+CHE,Diwali peak - baseline staffing,360.0,663
+CHE,Diwali peak - baseline staffing,370.0,657
+CHE,Diwali peak - baseline staffing,380.0,643
+CHE,Diwali peak - baseline staffing,390.0,679
+CHE,Diwali peak - baseline staffing,400.0,685
+CHE,Diwali peak - baseline staffing,410.0,686
+CHE,Diwali peak - baseline staffing,420.0,682
+CHE,Diwali peak - baseline staffing,430.0,730
+CHE,Diwali peak - baseline staffing,440.0,728
+CHE,Diwali peak - baseline staffing,450.0,744
+CHE,Diwali peak - baseline staffing,460.0,755
+CHE,Diwali peak - baseline staffing,470.0,7848
+CHE,Diwali peak - peak roster,0.0,72
+CHE,Diwali peak - peak roster,10.0,1126
+CHE,Diwali peak - peak roster,20.0,3854
+CHE,Diwali peak - peak roster,30.0,9922
+CHE,Diwali peak - peak roster,40.0,11828
+CHE,Diwali peak - peak roster,50.0,11031
+CHE,Diwali peak - peak roster,60.0,10133
+CHE,Diwali peak - peak roster,70.0,8934
+CHE,Diwali peak - peak roster,80.0,6720
+CHE,Diwali peak - peak roster,90.0,4344
+CHE,Diwali peak - peak roster,100.0,2781
+CHE,Diwali peak - peak roster,110.0,1531
+CHE,Diwali peak - peak roster,120.0,715
+CHE,Diwali peak - peak roster,130.0,318
+CHE,Diwali peak - peak roster,140.0,163
+CHE,Diwali peak - peak roster,150.0,63
+CHE,Diwali peak - peak roster,160.0,21
+CHE,Diwali peak - peak roster,170.0,7
+CHE,Diwali peak - peak roster,180.0,2
+CHE,Diwali peak - peak roster,190.0,0
+CHE,Diwali peak - peak roster,200.0,0
+CHE,Diwali peak - peak roster,210.0,0
+CHE,Diwali peak - peak roster,220.0,0
+CHE,Diwali peak - peak roster,230.0,0
+CHE,Diwali peak - peak roster,240.0,0
+CHE,Diwali peak - peak roster,250.0,0
+CHE,Diwali peak - peak roster,260.0,0
+CHE,Diwali peak - peak roster,270.0,0
+CHE,Diwali peak - peak roster,280.0,0
+CHE,Diwali peak - peak roster,290.0,0
+CHE,Diwali peak - peak roster,300.0,0
+CHE,Diwali peak - peak roster,310.0,0
+CHE,Diwali peak - peak roster,320.0,0
+CHE,Diwali peak - peak roster,330.0,0
+CHE,Diwali peak - peak roster,340.0,0
+CHE,Diwali peak - peak roster,350.0,0
+CHE,Diwali peak - peak roster,360.0,0
+CHE,Diwali peak - peak roster,370.0,0
+CHE,Diwali peak - peak roster,380.0,0
+CHE,Diwali peak - peak roster,390.0,0
+CHE,Diwali peak - peak roster,400.0,0
+CHE,Diwali peak - peak roster,410.0,0
+CHE,Diwali peak - peak roster,420.0,0
+CHE,Diwali peak - peak roster,430.0,0
+CHE,Diwali peak - peak roster,440.0,0
+CHE,Diwali peak - peak roster,450.0,0
+CHE,Diwali peak - peak roster,460.0,0
+CHE,Diwali peak - peak roster,470.0,0
+KOL,Baseline staffing,0.0,15
+KOL,Baseline staffing,10.0,288
+KOL,Baseline staffing,20.0,820
+KOL,Baseline staffing,30.0,1768
+KOL,Baseline staffing,40.0,2118
+KOL,Baseline staffing,50.0,2084
+KOL,Baseline staffing,60.0,2192
+KOL,Baseline staffing,70.0,2274
+KOL,Baseline staffing,80.0,2338
+KOL,Baseline staffing,90.0,2646
+KOL,Baseline staffing,100.0,2579
+KOL,Baseline staffing,110.0,2407
+KOL,Baseline staffing,120.0,1997
+KOL,Baseline staffing,130.0,1623
+KOL,Baseline staffing,140.0,1230
+KOL,Baseline staffing,150.0,903
+KOL,Baseline staffing,160.0,649
+KOL,Baseline staffing,170.0,392
+KOL,Baseline staffing,180.0,287
+KOL,Baseline staffing,190.0,151
+KOL,Baseline staffing,200.0,117
+KOL,Baseline staffing,210.0,68
+KOL,Baseline staffing,220.0,51
+KOL,Baseline staffing,230.0,27
+KOL,Baseline staffing,240.0,4
+KOL,Baseline staffing,250.0,3
+KOL,Baseline staffing,260.0,0
+KOL,Baseline staffing,270.0,0
+KOL,Baseline staffing,280.0,0
+KOL,Baseline staffing,290.0,0
+KOL,Baseline staffing,300.0,0
+KOL,Baseline staffing,310.0,0
+KOL,Baseline staffing,320.0,0
+KOL,Baseline staffing,330.0,0
+KOL,Baseline staffing,340.0,0
+KOL,Baseline staffing,350.0,0
+KOL,Baseline staffing,360.0,0
+KOL,Baseline staffing,370.0,0
+KOL,Baseline staffing,380.0,0
+KOL,Baseline staffing,390.0,0
+KOL,Baseline staffing,400.0,0
+KOL,Baseline staffing,410.0,0
+KOL,Baseline staffing,420.0,0
+KOL,Baseline staffing,430.0,0
+KOL,Baseline staffing,440.0,0
+KOL,Baseline staffing,450.0,0
+KOL,Baseline staffing,460.0,0
+KOL,Baseline staffing,470.0,0
+KOL,Optimized staffing,0.0,10
+KOL,Optimized staffing,10.0,603
+KOL,Optimized staffing,20.0,1898
+KOL,Optimized staffing,30.0,4626
+KOL,Optimized staffing,40.0,4989
+KOL,Optimized staffing,50.0,4500
+KOL,Optimized staffing,60.0,3748
+KOL,Optimized staffing,70.0,2889
+KOL,Optimized staffing,80.0,2077
+KOL,Optimized staffing,90.0,1450
+KOL,Optimized staffing,100.0,870
+KOL,Optimized staffing,110.0,563
+KOL,Optimized staffing,120.0,297
+KOL,Optimized staffing,130.0,169
+KOL,Optimized staffing,140.0,70
+KOL,Optimized staffing,150.0,40
+KOL,Optimized staffing,160.0,9
+KOL,Optimized staffing,170.0,4
+KOL,Optimized staffing,180.0,0
+KOL,Optimized staffing,190.0,0
+KOL,Optimized staffing,200.0,0
+KOL,Optimized staffing,210.0,0
+KOL,Optimized staffing,220.0,0
+KOL,Optimized staffing,230.0,0
+KOL,Optimized staffing,240.0,0
+KOL,Optimized staffing,250.0,0
+KOL,Optimized staffing,260.0,0
+KOL,Optimized staffing,270.0,0
+KOL,Optimized staffing,280.0,0
+KOL,Optimized staffing,290.0,0
+KOL,Optimized staffing,300.0,0
+KOL,Optimized staffing,310.0,0
+KOL,Optimized staffing,320.0,0
+KOL,Optimized staffing,330.0,0
+KOL,Optimized staffing,340.0,0
+KOL,Optimized staffing,350.0,0
+KOL,Optimized staffing,360.0,0
+KOL,Optimized staffing,370.0,0
+KOL,Optimized staffing,380.0,0
+KOL,Optimized staffing,390.0,0
+KOL,Optimized staffing,400.0,0
+KOL,Optimized staffing,410.0,0
+KOL,Optimized staffing,420.0,0
+KOL,Optimized staffing,430.0,0
+KOL,Optimized staffing,440.0,0
+KOL,Optimized staffing,450.0,0
+KOL,Optimized staffing,460.0,0
+KOL,Optimized staffing,470.0,0
+KOL,Diwali peak - baseline staffing,0.0,7
+KOL,Diwali peak - baseline staffing,10.0,195
+KOL,Diwali peak - baseline staffing,20.0,692
+KOL,Diwali peak - baseline staffing,30.0,1312
+KOL,Diwali peak - baseline staffing,40.0,1254
+KOL,Diwali peak - baseline staffing,50.0,1089
+KOL,Diwali peak - baseline staffing,60.0,914
+KOL,Diwali peak - baseline staffing,70.0,890
+KOL,Diwali peak - baseline staffing,80.0,752
+KOL,Diwali peak - baseline staffing,90.0,812
+KOL,Diwali peak - baseline staffing,100.0,782
+KOL,Diwali peak - baseline staffing,110.0,739
+KOL,Diwali peak - baseline staffing,120.0,745
+KOL,Diwali peak - baseline staffing,130.0,703
+KOL,Diwali peak - baseline staffing,140.0,730
+KOL,Diwali peak - baseline staffing,150.0,699
+KOL,Diwali peak - baseline staffing,160.0,652
+KOL,Diwali peak - baseline staffing,170.0,683
+KOL,Diwali peak - baseline staffing,180.0,700
+KOL,Diwali peak - baseline staffing,190.0,681
+KOL,Diwali peak - baseline staffing,200.0,652
+KOL,Diwali peak - baseline staffing,210.0,664
+KOL,Diwali peak - baseline staffing,220.0,678
+KOL,Diwali peak - baseline staffing,230.0,661
+KOL,Diwali peak - baseline staffing,240.0,638
+KOL,Diwali peak - baseline staffing,250.0,699
+KOL,Diwali peak - baseline staffing,260.0,645
+KOL,Diwali peak - baseline staffing,270.0,667
+KOL,Diwali peak - baseline staffing,280.0,664
+KOL,Diwali peak - baseline staffing,290.0,687
+KOL,Diwali peak - baseline staffing,300.0,653
+KOL,Diwali peak - baseline staffing,310.0,658
+KOL,Diwali peak - baseline staffing,320.0,658
+KOL,Diwali peak - baseline staffing,330.0,679
+KOL,Diwali peak - baseline staffing,340.0,676
+KOL,Diwali peak - baseline staffing,350.0,669
+KOL,Diwali peak - baseline staffing,360.0,716
+KOL,Diwali peak - baseline staffing,370.0,726
+KOL,Diwali peak - baseline staffing,380.0,731
+KOL,Diwali peak - baseline staffing,390.0,756
+KOL,Diwali peak - baseline staffing,400.0,769
+KOL,Diwali peak - baseline staffing,410.0,814
+KOL,Diwali peak - baseline staffing,420.0,844
+KOL,Diwali peak - baseline staffing,430.0,845
+KOL,Diwali peak - baseline staffing,440.0,852
+KOL,Diwali peak - baseline staffing,450.0,911
+KOL,Diwali peak - baseline staffing,460.0,871
+KOL,Diwali peak - baseline staffing,470.0,5998
+KOL,Diwali peak - peak roster,0.0,41
+KOL,Diwali peak - peak roster,10.0,1200
+KOL,Diwali peak - peak roster,20.0,4040
+KOL,Diwali peak - peak roster,30.0,11917
+KOL,Diwali peak - peak roster,40.0,12893
+KOL,Diwali peak - peak roster,50.0,10839
+KOL,Diwali peak - peak roster,60.0,9284
+KOL,Diwali peak - peak roster,70.0,7314
+KOL,Diwali peak - peak roster,80.0,5165
+KOL,Diwali peak - peak roster,90.0,3236
+KOL,Diwali peak - peak roster,100.0,1937
+KOL,Diwali peak - peak roster,110.0,985
+KOL,Diwali peak - peak roster,120.0,472
+KOL,Diwali peak - peak roster,130.0,190
+KOL,Diwali peak - peak roster,140.0,63
+KOL,Diwali peak - peak roster,150.0,26
+KOL,Diwali peak - peak roster,160.0,7
+KOL,Diwali peak - peak roster,170.0,0
+KOL,Diwali peak - peak roster,180.0,0
+KOL,Diwali peak - peak roster,190.0,0
+KOL,Diwali peak - peak roster,200.0,0
+KOL,Diwali peak - peak roster,210.0,0
+KOL,Diwali peak - peak roster,220.0,0
+KOL,Diwali peak - peak roster,230.0,0
+KOL,Diwali peak - peak roster,240.0,0
+KOL,Diwali peak - peak roster,250.0,0
+KOL,Diwali peak - peak roster,260.0,0
+KOL,Diwali peak - peak roster,270.0,0
+KOL,Diwali peak - peak roster,280.0,0
+KOL,Diwali peak - peak roster,290.0,0
+KOL,Diwali peak - peak roster,300.0,0
+KOL,Diwali peak - peak roster,310.0,0
+KOL,Diwali peak - peak roster,320.0,0
+KOL,Diwali peak - peak roster,330.0,0
+KOL,Diwali peak - peak roster,340.0,0
+KOL,Diwali peak - peak roster,350.0,0
+KOL,Diwali peak - peak roster,360.0,0
+KOL,Diwali peak - peak roster,370.0,0
+KOL,Diwali peak - peak roster,380.0,0
+KOL,Diwali peak - peak roster,390.0,0
+KOL,Diwali peak - peak roster,400.0,0
+KOL,Diwali peak - peak roster,410.0,0
+KOL,Diwali peak - peak roster,420.0,0
+KOL,Diwali peak - peak roster,430.0,0
+KOL,Diwali peak - peak roster,440.0,0
+KOL,Diwali peak - peak roster,450.0,0
+KOL,Diwali peak - peak roster,460.0,0
+KOL,Diwali peak - peak roster,470.0,0

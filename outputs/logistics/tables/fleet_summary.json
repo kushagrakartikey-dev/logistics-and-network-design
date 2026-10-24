@@ -1,0 +1,44 @@
+{
+  "representative_day": "2025-09-10",
+  "target": 0.95,
+  "levels": [
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "feasible_levels": [
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "infeasible": [
+    {
+      "city_id": "MUM",
+      "demand_multiplier": 3.0,
+      "status": "infeasible: compliance 94.5% <= 95% with candidate pool"
+    }
+  ],
+  "current_fleet_max_level_meeting_target": {
+    "ALL": 1.0,
+    "BLR": 1.0,
+    "CHE": 2.0,
+    "DEL": 0.75,
+    "KOL": 2.0,
+    "MUM": 1.0
+  },
+  "forecast_link": {
+    "used": true,
+    "forecast_peak_multiplier": 1.029,
+    "scenario_to_plan": 1.5,
+    "forecast_horizon": [
+      "2025-11-30",
+      "2025-12-13"
+    ]
+  }
+}

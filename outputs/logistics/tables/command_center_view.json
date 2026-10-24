@@ -1,0 +1,189 @@
+{
+  "health": {
+    "score": 75.8,
+    "components": {
+      "delivery_compliance": 83.7,
+      "last_mile_cost": 100.0,
+      "warehouse_throughput": 77.8,
+      "dc_readiness": 50.0,
+      "fleet_scalability": 60.0
+    },
+    "weights": {
+      "delivery_compliance": 0.3,
+      "last_mile_cost": 0.2,
+      "warehouse_throughput": 0.15,
+      "dc_readiness": 0.2,
+      "fleet_scalability": 0.15
+    }
+  },
+  "alerts": [
+    {
+      "severity": "high",
+      "area": "DC operations",
+      "city_id": "MUM",
+      "message": "Diwali volume at current roster: P95 cycle 458 min, backlog P50 176 orders",
+      "impact_orders": 176.0
+    },
+    {
+      "severity": "high",
+      "area": "DC operations",
+      "city_id": "CHE",
+      "message": "Diwali volume at current roster: P95 cycle 543 min, backlog P50 167 orders",
+      "impact_orders": 167.0
+    },
+    {
+      "severity": "high",
+      "area": "DC operations",
+      "city_id": "KOL",
+      "message": "Diwali volume at current roster: P95 cycle 519 min, backlog P50 143 orders",
+      "impact_orders": 143.0
+    },
+    {
+      "severity": "high",
+      "area": "DC operations",
+      "city_id": "DEL",
+      "message": "Diwali volume at current roster: P95 cycle 433 min, backlog P50 142 orders",
+      "impact_orders": 142.0
+    },
+    {
+      "severity": "high",
+      "area": "DC operations",
+      "city_id": "BLR",
+      "message": "Diwali volume at current roster: P95 cycle 351 min, backlog P50 54 orders",
+      "impact_orders": 54.0
+    },
+    {
+      "severity": "medium",
+      "area": "Fleet",
+      "city_id": "CHE",
+      "message": "Current 25-vehicle fleet falls below the compliance target from 3x demand",
+      "impact_orders": 69.0
+    },
+    {
+      "severity": "medium",
+      "area": "Fleet",
+      "city_id": "KOL",
+      "message": "Current 25-vehicle fleet falls below the compliance target from 3x demand",
+      "impact_orders": 42.0
+    },
+    {
+      "severity": "medium",
+      "area": "Fleet",
+      "city_id": "MUM",
+      "message": "Current 25-vehicle fleet falls below the compliance target from 1.5x demand",
+      "impact_orders": 17.0
+    },
+    {
+      "severity": "medium",
+      "area": "Fleet",
+      "city_id": "DEL",
+      "message": "Current 25-vehicle fleet falls below the compliance target from 1x demand",
+      "impact_orders": 10.0
+    },
+    {
+      "severity": "medium",
+      "area": "Fleet",
+      "city_id": "BLR",
+      "message": "Current 25-vehicle fleet falls below the compliance target from 1.5x demand",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "low",
+      "area": "Routing",
+      "city_id": "BLR",
+      "message": "1 optimized route(s) exceed driver duty under replayed traffic (overtime)",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "low",
+      "area": "Routing",
+      "city_id": "CHE",
+      "message": "2 optimized route(s) exceed driver duty under replayed traffic (overtime)",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "low",
+      "area": "Routing",
+      "city_id": "DEL",
+      "message": "1 optimized route(s) exceed driver duty under replayed traffic (overtime)",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "low",
+      "area": "Routing",
+      "city_id": "KOL",
+      "message": "2 optimized route(s) exceed driver duty under replayed traffic (overtime)",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "low",
+      "area": "Routing",
+      "city_id": "MUM",
+      "message": "2 optimized route(s) exceed driver duty under replayed traffic (overtime)",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "info",
+      "area": "Network",
+      "city_id": "MUM",
+      "message": "Defer new MFCs: no configuration has positive NPV at today's 184 parcels/day. Least-negative option p=1 (Byculla) breaks even at 6.2x volume (~1131 parcels/day).",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "info",
+      "area": "Network",
+      "city_id": "DEL",
+      "message": "Defer new MFCs: no configuration has positive NPV at today's 194 parcels/day. Least-negative option p=1 (Mayapuri) breaks even at 2.8x volume (~551 parcels/day).",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "info",
+      "area": "Network",
+      "city_id": "BLR",
+      "message": "Defer new MFCs: no configuration has positive NPV at today's 154 parcels/day. Least-negative option p=1 (Hebbal) breaks even at 8.5x volume (~1303 parcels/day).",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "info",
+      "area": "Network",
+      "city_id": "CHE",
+      "message": "Defer new MFCs: no configuration has positive NPV at today's 127 parcels/day. Least-negative option p=1 (Kolathur) breaks even at 11.4x volume (~1445 parcels/day).",
+      "impact_orders": 0.0
+    },
+    {
+      "severity": "info",
+      "area": "Network",
+      "city_id": "KOL",
+      "message": "Defer new MFCs: no configuration has positive NPV at today's 106 parcels/day. Least-negative option p=1 (Park Circus) breaks even at 6.3x volume (~673 parcels/day).",
+      "impact_orders": 0.0
+    }
+  ],
+  "upstream": {
+    "sourcing": "not run",
+    "planning": "not run",
+    "process": "not run",
+    "procurement": "not run",
+    "inventory": "not run",
+    "logistics": "available"
+  },
+  "safety_stock": {
+    "status": "awaiting upstream",
+    "detail": "Output 5 (Inventory Optimizer) contract not found; lane sigma_LT published for it to consume"
+  },
+  "kpis": {
+    "health_score": 75.8,
+    "tw_compliance": 0.9838,
+    "fleet_cost_reduction_pct": 29.77,
+    "last_mile_cost_reduction_pct": 28.79,
+    "pick_travel_reduction_pct": 26.18,
+    "throughput_gain_pct": 23.35,
+    "cities": [
+      "MUM",
+      "DEL",
+      "BLR",
+      "CHE",
+      "KOL"
+    ],
+    "network_priority_city": "DEL"
+  }
+}

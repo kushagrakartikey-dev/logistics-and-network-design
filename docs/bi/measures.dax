@@ -1,0 +1,69 @@
+// ===================== Routing =====================
+Orders Planned = COUNTROWS ( fact_route_stops ) + COUNTROWS ( fact_unassigned )
+Fleet Cost = SUM ( fact_routes[cost_total] )
+Outsourcing Cost = SUM ( fact_unassigned[outsourcing_cost] )
+Last Mile Cost = [Fleet Cost] + [Outsourcing Cost]
+Baseline Last Mile Cost = CALCULATE ( [Last Mile Cost], fact_routes[plan] = "baseline", fact_unassigned[plan] = "baseline" )
+Optimized Last Mile Cost = CALCULATE ( [Last Mile Cost], fact_routes[plan] = "optimized", fact_unassigned[plan] = "optimized" )
+Last Mile Cost Reduction % = DIVIDE ( [Baseline Last Mile Cost] - [Optimized Last Mile Cost], [Baseline Last Mile Cost] )
+Fleet Cost Reduction % =
+    VAR b = CALCULATE ( [Fleet Cost], fact_routes[plan] = "baseline" )
+    VAR o = CALCULATE ( [Fleet Cost], fact_routes[plan] = "optimized" )
+    RETURN DIVIDE ( b - o, b )
+On Time Stops = CALCULATE ( COUNTROWS ( fact_route_stops ), fact_route_stops[on_time] = TRUE () )
+On Time % = DIVIDE ( [On Time Stops], [Orders Planned] )
+Vehicles Used = DISTINCTCOUNT ( fact_routes[vehicle_id] )
+Vehicles Saved =
+    CALCULATE ( [Vehicles Used], fact_routes[plan] = "baseline" ) - CALCULATE ( [Vehicles Used], fact_routes[plan] = "optimized" )
+Road Km = SUM ( fact_routes[road_km] )
+Straight Km = SUM ( fact_routes[straight_km] )
+Cost per Order = DIVIDE ( [Last Mile Cost], [Orders Planned] )
+Avg Load Utilisation % = AVERAGE ( fact_routes[load_util_pct] ) / 100
+Duty Overruns = CALCULATE ( COUNTROWS ( fact_routes ), fact_routes[duration_violation] = TRUE () )
+
+// ===================== Fleet =====================
+Recommended Fleet = SUM ( fact_fleet_scenarios[recommended_fleet] )
+Current Fleet Compliance = AVERAGE ( fact_fleet_scenarios[current_fleet_compliance] )
+Feasible Levels = CALCULATE ( COUNTROWS ( fact_fleet_scenarios ), fact_fleet_scenarios[feasible] = TRUE () )
+TCO Own = SUM ( fact_fleet_tco[tco_own] )
+TCO Lease = SUM ( fact_fleet_tco[tco_lease] )
+Lease Saving vs Own = [TCO Own] - [TCO Lease]
+
+// ===================== Warehouse =====================
+Travel m per Line = DIVIDE ( SUM ( fact_warehouse_performance[travel_m] ), SUM ( fact_warehouse_performance[pick_lines] ) )
+Picks per Hour = DIVIDE ( SUM ( fact_warehouse_performance[pick_lines] ), SUM ( fact_warehouse_performance[total_hours] ) )
+Pick Travel Reduction % =
+    VAR b = CALCULATE ( [Travel m per Line], fact_warehouse_performance[layout] = "baseline" )
+    VAR o = CALCULATE ( [Travel m per Line], fact_warehouse_performance[layout] = "optimized" )
+    RETURN DIVIDE ( b - o, b )
+Throughput Gain % =
+    DIVIDE ( CALCULATE ( [Picks per Hour], fact_warehouse_performance[layout] = "optimized" ),
+             CALCULATE ( [Picks per Hour], fact_warehouse_performance[layout] = "baseline" ) ) - 1
+Bound Captured % =
+    VAR b = CALCULATE ( [Travel m per Line], fact_warehouse_performance[layout] = "baseline" )
+    VAR o = CALCULATE ( [Travel m per Line], fact_warehouse_performance[layout] = "optimized" )
+    VAR p = CALCULATE ( [Travel m per Line], fact_warehouse_performance[layout] = "perfect_information" )
+    RETURN DIVIDE ( b - o, b - p )
+
+// ===================== Simulation =====================
+Pooled P95 Cycle (min) = MAX ( fact_simulation_summary[pooled_cycle_p95] )
+Throughput P50 = MEDIAN ( fact_simulation_runs[throughput] )
+Throughput P10 = PERCENTILEX.INC ( fact_simulation_runs, fact_simulation_runs[throughput], 0.10 )
+Throughput P90 = PERCENTILEX.INC ( fact_simulation_runs, fact_simulation_runs[throughput], 0.90 )
+Cycle P95 (P50 across runs) = MEDIAN ( fact_simulation_runs[cycle_p95] )
+Meets 2h Target = IF ( [Pooled P95 Cycle (min)] <= 120, "Meets", "Misses" )
+
+// ===================== Network & finance =====================
+WACC Value = SELECTEDVALUE ( WACC[WACC], 0.12 )
+NPV (WACC what-if) =
+    SUMX ( fact_network_cashflows, fact_network_cashflows[cash_flow] / ( 1 + [WACC Value] ) ^ fact_network_cashflows[year] )
+NPV (model) = SUM ( fact_network_scenarios[npv] )
+SLA 2h Coverage = AVERAGE ( fact_network_scenarios[sla_2h_coverage] )
+Break-even Parcels per Day = MIN ( fact_network_scenarios[break_even_parcels_per_day] )
+Avg Km per Parcel = AVERAGE ( fact_network_scenarios[avg_km_per_order] )
+
+// ===================== Demand & ML =====================
+Orders = COUNTROWS ( fact_orders )
+Orders per Day = DIVIDE ( [Orders], DISTINCTCOUNT ( fact_orders[date_key] ) )
+Forecast MAE = AVERAGEX ( fact_ml_demand_validation, ABS ( fact_ml_demand_validation[ml_forecast] - fact_ml_demand_validation[orders] ) )
+Naive MAE = AVERAGEX ( fact_ml_demand_validation, ABS ( fact_ml_demand_validation[seasonal_naive] - fact_ml_demand_validation[orders] ) )

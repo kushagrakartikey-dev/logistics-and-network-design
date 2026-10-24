@@ -1,0 +1,5 @@
+model,approach,MAE,RMSE,MAPE,n,unit,validation_start
+Travel time,Planning formula (baseline),10.262,16.057,16.4,12520,minutes,2025-11-09
+Travel time,Gradient boosting (log ratio),7.768,12.016,12.93,12520,minutes,2025-11-09
+Zone daily demand,Seasonal naive (baseline),7.733,9.786,20.21,525,orders,2025-11-09
+Zone daily demand,Gradient boosting (calendar),5.814,7.487,14.46,525,orders,2025-11-09

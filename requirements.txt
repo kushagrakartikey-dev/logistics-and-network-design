@@ -1,0 +1,20 @@
+# Runtime (tested with Python 3.12: pandas 3.0, numpy 2.4, ortools 9.15, PuLP 4.2 + highspy, simpy 4.1)
+pandas>=2.1
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+ortools>=9.10
+pulp>=2.8
+highspy>=1.7
+simpy>=4.1
+networkx>=3.2
+folium>=0.16
+geopy>=2.4
+plotly>=5.20
+dash>=2.16
+openpyxl>=3.1
+pyarrow>=15
+pyyaml>=6.0
+# Development
+pytest>=8
+ruff>=0.5

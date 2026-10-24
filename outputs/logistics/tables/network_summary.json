@@ -1,0 +1,161 @@
+{
+  "by_city": {
+    "MUM": {
+      "calibration": {
+        "variable_cost_inr": 48033.33,
+        "order_km": 5548.239896185515,
+        "cost_per_order_km": 8.657399625604423,
+        "fixed_cost_inr": 33800.0,
+        "orders": 283
+      },
+      "baseline_km_per_day": 2183.6762384683097,
+      "eligible_orders_per_day": 183.5888888888889,
+      "best_p": 1,
+      "best_npv": -44249197.0,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 184 parcels/day. Least-negative option p=1 (Byculla) breaks even at 6.2x volume (~1131 parcels/day).",
+      "baseline_sla_2h": 0.7603
+    },
+    "DEL": {
+      "calibration": {
+        "variable_cost_inr": 51355.22,
+        "order_km": 6566.019929521489,
+        "cost_per_order_km": 7.8213621876323804,
+        "fixed_cost_inr": 34350.0,
+        "orders": 257
+      },
+      "baseline_km_per_day": 3639.941979152555,
+      "eligible_orders_per_day": 193.89999999999998,
+      "best_p": 1,
+      "best_npv": -27129032.0,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 194 parcels/day. Least-negative option p=1 (Mayapuri) breaks even at 2.8x volume (~551 parcels/day).",
+      "baseline_sla_2h": 0.4189
+    },
+    "BLR": {
+      "calibration": {
+        "variable_cost_inr": 38425.880000000005,
+        "order_km": 3271.5661023838743,
+        "cost_per_order_km": 11.7454084060843,
+        "fixed_cost_inr": 28650.0,
+        "orders": 214
+      },
+      "baseline_km_per_day": 1502.3733451577066,
+      "eligible_orders_per_day": 154.1,
+      "best_p": 1,
+      "best_npv": -34995517.0,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 154 parcels/day. Least-negative option p=1 (Hebbal) breaks even at 8.5x volume (~1303 parcels/day).",
+      "baseline_sla_2h": 0.9327
+    },
+    "CHE": {
+      "calibration": {
+        "variable_cost_inr": 35142.88,
+        "order_km": 4067.4082950579923,
+        "cost_per_order_km": 8.640116125715611,
+        "fixed_cost_inr": 25400.0,
+        "orders": 201
+      },
+      "baseline_km_per_day": 1283.7715408558508,
+      "eligible_orders_per_day": 126.94444444444446,
+      "best_p": 1,
+      "best_npv": -31325883.0,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 127 parcels/day. Least-negative option p=1 (Kolathur) breaks even at 11.4x volume (~1445 parcels/day).",
+      "baseline_sla_2h": 0.8994
+    },
+    "KOL": {
+      "calibration": {
+        "variable_cost_inr": 20876.18,
+        "order_km": 1985.219865612286,
+        "cost_per_order_km": 10.515802486976082,
+        "fixed_cost_inr": 17800.0,
+        "orders": 145
+      },
+      "baseline_km_per_day": 1052.5946966525357,
+      "eligible_orders_per_day": 106.5,
+      "best_p": 1,
+      "best_npv": -33202547.0,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 106 parcels/day. Least-negative option p=1 (Park Circus) breaks even at 6.3x volume (~673 parcels/day).",
+      "baseline_sla_2h": 0.9811
+    }
+  },
+  "ranking": [
+    {
+      "investment_priority": 1,
+      "city_id": "DEL",
+      "city": "Delhi NCR",
+      "state": "Delhi / Haryana / Uttar Pradesh",
+      "parcels_per_day": 193.9,
+      "baseline_sla_2h": 0.4189,
+      "best_p": 1,
+      "best_sites": "Mayapuri",
+      "best_npv": -27129032.0,
+      "break_even_parcels_per_day": 551.0,
+      "break_even_multiplier": 2.84,
+      "min_p_full_sla": 3.0,
+      "cost_per_order_km": 7.82,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 194 parcels/day. Least-negative option p=1 (Mayapuri) breaks even at 2.8x volume (~551 parcels/day)."
+    },
+    {
+      "investment_priority": 2,
+      "city_id": "MUM",
+      "city": "Mumbai MMR",
+      "state": "Maharashtra",
+      "parcels_per_day": 183.6,
+      "baseline_sla_2h": 0.7603,
+      "best_p": 1,
+      "best_sites": "Byculla",
+      "best_npv": -44249197.0,
+      "break_even_parcels_per_day": 1131.0,
+      "break_even_multiplier": 6.16,
+      "min_p_full_sla": 2.0,
+      "cost_per_order_km": 8.66,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 184 parcels/day. Least-negative option p=1 (Byculla) breaks even at 6.2x volume (~1131 parcels/day)."
+    },
+    {
+      "investment_priority": 3,
+      "city_id": "KOL",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "parcels_per_day": 106.5,
+      "baseline_sla_2h": 0.9811,
+      "best_p": 1,
+      "best_sites": "Park Circus",
+      "best_npv": -33202547.0,
+      "break_even_parcels_per_day": 673.0,
+      "break_even_multiplier": 6.32,
+      "min_p_full_sla": 1.0,
+      "cost_per_order_km": 10.52,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 106 parcels/day. Least-negative option p=1 (Park Circus) breaks even at 6.3x volume (~673 parcels/day)."
+    },
+    {
+      "investment_priority": 4,
+      "city_id": "BLR",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "parcels_per_day": 154.1,
+      "baseline_sla_2h": 0.9327,
+      "best_p": 1,
+      "best_sites": "Hebbal",
+      "best_npv": -34995517.0,
+      "break_even_parcels_per_day": 1303.0,
+      "break_even_multiplier": 8.46,
+      "min_p_full_sla": NaN,
+      "cost_per_order_km": 11.75,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 154 parcels/day. Least-negative option p=1 (Hebbal) breaks even at 8.5x volume (~1303 parcels/day)."
+    },
+    {
+      "investment_priority": 5,
+      "city_id": "CHE",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "parcels_per_day": 126.9,
+      "baseline_sla_2h": 0.8994,
+      "best_p": 1,
+      "best_sites": "Kolathur",
+      "best_npv": -31325883.0,
+      "break_even_parcels_per_day": 1445.0,
+      "break_even_multiplier": 11.39,
+      "min_p_full_sla": NaN,
+      "cost_per_order_km": 8.64,
+      "recommendation": "Defer new MFCs: no configuration has positive NPV at today's 127 parcels/day. Least-negative option p=1 (Kolathur) breaks even at 11.4x volume (~1445 parcels/day)."
+    }
+  ]
+}

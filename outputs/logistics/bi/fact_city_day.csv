@@ -1,0 +1,451 @@
+city_id,b2c_mult,b2b_mult,traffic_mult,event,rain,is_event,date_key
+MUM,1.1,1.05,1.0,,False,False,20250901
+MUM,1.05,1.05,1.0,,True,False,20250902
+MUM,1.0,1.05,1.0,,False,False,20250903
+MUM,1.0,1.05,1.0,,True,False,20250904
+MUM,1.0,1.05,1.0,,False,False,20250905
+MUM,0.76,0.32000000000000006,1.35,Ganesh Visarjan,False,True,20250906
+MUM,0.85,0.25,1.0,,False,False,20250907
+MUM,1.1,1.05,1.0,,True,False,20250908
+MUM,1.05,1.05,1.0,,False,False,20250909
+MUM,1.0,1.05,1.0,,True,False,20250910
+MUM,1.0,1.05,1.0,,False,False,20250911
+MUM,1.0,1.05,1.0,,True,False,20250912
+MUM,0.95,0.8,1.0,,True,False,20250913
+MUM,0.85,0.25,1.0,,False,False,20250914
+MUM,1.1,1.05,1.0,,True,False,20250915
+MUM,1.05,1.05,1.0,,False,False,20250916
+MUM,1.0,1.05,1.0,,False,False,20250917
+MUM,1.0,1.05,1.0,,True,False,20250918
+MUM,1.0,1.05,1.0,,True,False,20250919
+MUM,0.95,0.8,1.0,,False,False,20250920
+MUM,0.85,0.25,1.0,,False,False,20250921
+MUM,1.1,1.26,1.0,Navratri dealer stocking,True,True,20250922
+MUM,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250923
+MUM,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250924
+MUM,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250925
+MUM,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250926
+MUM,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250927
+MUM,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250928
+MUM,1.6500000000000001,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250929
+MUM,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250930
+MUM,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20251001
+MUM,1.275,0.43470000000000003,0.9450000000000001,Festive sale wave 1 + Navratri dealer stocking + Dussehra holiday,False,True,20251002
+MUM,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251003
+MUM,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251004
+MUM,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251005
+MUM,1.1,1.26,1.0,Navratri dealer stocking,False,True,20251006
+MUM,1.05,1.26,1.0,Navratri dealer stocking,False,True,20251007
+MUM,1.0,1.26,1.0,Navratri dealer stocking,True,True,20251008
+MUM,1.0,1.26,1.0,Navratri dealer stocking,False,True,20251009
+MUM,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251010
+MUM,1.805,1.296,1.1,Navratri dealer stocking + Diwali peak,False,True,20251011
+MUM,1.615,0.405,1.1,Navratri dealer stocking + Diwali peak,False,True,20251012
+MUM,2.09,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251013
+MUM,1.9949999999999999,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251014
+MUM,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251015
+MUM,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251016
+MUM,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251017
+MUM,1.805,1.08,1.1,Diwali peak,False,True,20251018
+MUM,1.615,0.3375,1.1,Diwali peak,False,True,20251019
+MUM,0.7150000000000001,0.3675,0.85,Diwali holidays,False,True,20251020
+MUM,0.6825000000000001,0.3675,0.85,Diwali holidays,False,True,20251021
+MUM,0.65,0.3675,0.85,Diwali holidays,False,True,20251022
+MUM,0.65,0.3675,0.85,Diwali holidays,False,True,20251023
+MUM,1.0,1.05,1.0,,False,False,20251024
+MUM,0.95,0.8,1.0,,True,False,20251025
+MUM,0.85,0.25,1.0,,False,False,20251026
+MUM,1.1,1.05,1.0,,False,False,20251027
+MUM,1.05,1.05,1.0,,False,False,20251028
+MUM,1.0,1.05,1.0,,False,False,20251029
+MUM,1.0,1.05,1.0,,False,False,20251030
+MUM,1.0,1.05,1.0,,False,False,20251031
+MUM,0.95,0.8,1.0,,False,False,20251101
+MUM,0.85,0.25,1.0,,False,False,20251102
+MUM,1.1,1.05,1.0,,False,False,20251103
+MUM,1.05,1.05,1.0,,False,False,20251104
+MUM,1.0,1.05,1.0,,False,False,20251105
+MUM,1.0,1.05,1.0,,False,False,20251106
+MUM,1.0,1.05,1.0,,False,False,20251107
+MUM,0.95,0.8,1.0,,False,False,20251108
+MUM,0.85,0.25,1.0,,False,False,20251109
+MUM,1.1,1.05,1.0,,False,False,20251110
+MUM,1.05,1.05,1.0,,False,False,20251111
+MUM,1.0,1.05,1.0,,False,False,20251112
+MUM,1.0,1.05,1.0,,False,False,20251113
+MUM,1.0,1.05,1.0,,False,False,20251114
+MUM,0.95,0.8,1.0,,False,False,20251115
+MUM,0.85,0.25,1.0,,False,False,20251116
+MUM,1.1,1.05,1.0,,False,False,20251117
+MUM,1.05,1.05,1.0,,False,False,20251118
+MUM,1.0,1.05,1.0,,False,False,20251119
+MUM,1.0,1.05,1.0,,False,False,20251120
+MUM,1.0,1.05,1.0,,False,False,20251121
+MUM,0.95,0.8,1.0,,False,False,20251122
+MUM,0.85,0.25,1.0,,False,False,20251123
+MUM,1.1,1.05,1.0,,False,False,20251124
+MUM,1.05,1.05,1.0,,False,False,20251125
+MUM,1.0,1.05,1.0,,False,False,20251126
+MUM,1.0,1.05,1.0,,False,False,20251127
+MUM,1.0,1.05,1.0,,False,False,20251128
+MUM,0.95,0.8,1.0,,False,False,20251129
+DEL,1.1,1.05,1.0,,False,False,20250901
+DEL,1.05,1.05,1.0,,False,False,20250902
+DEL,1.0,1.05,1.0,,False,False,20250903
+DEL,1.0,1.05,1.0,,False,False,20250904
+DEL,1.0,1.05,1.0,,False,False,20250905
+DEL,0.95,0.8,1.0,,True,False,20250906
+DEL,0.85,0.25,1.0,,False,False,20250907
+DEL,1.1,1.05,1.0,,False,False,20250908
+DEL,1.05,1.05,1.0,,False,False,20250909
+DEL,1.0,1.05,1.0,,False,False,20250910
+DEL,1.0,1.05,1.0,,True,False,20250911
+DEL,1.0,1.05,1.0,,False,False,20250912
+DEL,0.95,0.8,1.0,,False,False,20250913
+DEL,0.85,0.25,1.0,,False,False,20250914
+DEL,1.1,1.05,1.0,,False,False,20250915
+DEL,1.05,1.05,1.0,,False,False,20250916
+DEL,1.0,1.05,1.0,,True,False,20250917
+DEL,1.0,1.05,1.0,,True,False,20250918
+DEL,1.0,1.05,1.0,,False,False,20250919
+DEL,0.95,0.8,1.0,,False,False,20250920
+DEL,0.85,0.25,1.0,,False,False,20250921
+DEL,1.1,1.26,1.0,Navratri dealer stocking,False,True,20250922
+DEL,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250923
+DEL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250924
+DEL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250925
+DEL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250926
+DEL,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250927
+DEL,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250928
+DEL,1.6500000000000001,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250929
+DEL,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250930
+DEL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251001
+DEL,1.275,0.43470000000000003,0.9450000000000001,Festive sale wave 1 + Navratri dealer stocking + Dussehra holiday,False,True,20251002
+DEL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251003
+DEL,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251004
+DEL,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251005
+DEL,1.1,1.26,1.0,Navratri dealer stocking,False,True,20251006
+DEL,1.05,1.26,1.0,Navratri dealer stocking,False,True,20251007
+DEL,1.0,1.26,1.0,Navratri dealer stocking,False,True,20251008
+DEL,1.0,1.26,1.0,Navratri dealer stocking,False,True,20251009
+DEL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251010
+DEL,1.805,1.296,1.1,Navratri dealer stocking + Diwali peak,False,True,20251011
+DEL,1.615,0.405,1.1,Navratri dealer stocking + Diwali peak,False,True,20251012
+DEL,2.09,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251013
+DEL,1.9949999999999999,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251014
+DEL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251015
+DEL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251016
+DEL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251017
+DEL,1.805,1.08,1.1,Diwali peak,False,True,20251018
+DEL,1.615,0.3375,1.1,Diwali peak,False,True,20251019
+DEL,0.7150000000000001,0.3675,0.85,Diwali holidays,False,True,20251020
+DEL,0.6825000000000001,0.3675,0.85,Diwali holidays,False,True,20251021
+DEL,0.65,0.3675,0.85,Diwali holidays,False,True,20251022
+DEL,0.65,0.3675,0.85,Diwali holidays,False,True,20251023
+DEL,1.0,1.05,1.0,,False,False,20251024
+DEL,0.95,0.8,1.0,,False,False,20251025
+DEL,0.85,0.25,1.0,,False,False,20251026
+DEL,0.9900000000000001,0.63,1.1,Chhath Puja,False,True,20251027
+DEL,0.9450000000000001,0.63,1.1,Chhath Puja,False,True,20251028
+DEL,1.0,1.05,1.0,,False,False,20251029
+DEL,1.0,1.05,1.0,,False,False,20251030
+DEL,1.0,1.05,1.0,,False,False,20251031
+DEL,0.95,0.8,1.0,,False,False,20251101
+DEL,0.85,0.25,1.0,,False,False,20251102
+DEL,1.1,1.05,1.0,,False,False,20251103
+DEL,1.05,1.05,1.0,,False,False,20251104
+DEL,1.0,1.05,1.0,,True,False,20251105
+DEL,1.0,1.05,1.0,,False,False,20251106
+DEL,1.0,1.05,1.0,,False,False,20251107
+DEL,0.95,0.8,1.0,,False,False,20251108
+DEL,0.85,0.25,1.0,,False,False,20251109
+DEL,1.1,1.05,1.0,,False,False,20251110
+DEL,1.05,1.05,1.0,,False,False,20251111
+DEL,1.0,1.05,1.0,,False,False,20251112
+DEL,1.0,1.05,1.0,,False,False,20251113
+DEL,1.0,1.05,1.0,,False,False,20251114
+DEL,0.95,0.8,1.0,,False,False,20251115
+DEL,0.85,0.25,1.0,,False,False,20251116
+DEL,1.1,1.05,1.0,,False,False,20251117
+DEL,1.05,1.05,1.0,,False,False,20251118
+DEL,1.0,1.05,1.0,,False,False,20251119
+DEL,1.0,1.05,1.0,,False,False,20251120
+DEL,1.0,1.05,1.0,,False,False,20251121
+DEL,0.95,0.8,1.0,,False,False,20251122
+DEL,0.85,0.25,1.0,,False,False,20251123
+DEL,1.1,1.05,1.0,,False,False,20251124
+DEL,1.05,1.05,1.0,,False,False,20251125
+DEL,1.0,1.05,1.0,,False,False,20251126
+DEL,1.0,1.05,1.0,,False,False,20251127
+DEL,1.0,1.05,1.0,,False,False,20251128
+DEL,0.95,0.8,1.0,,False,False,20251129
+BLR,1.1,1.05,1.0,,True,False,20250901
+BLR,1.05,1.05,1.0,,True,False,20250902
+BLR,1.0,1.05,1.0,,True,False,20250903
+BLR,1.0,1.05,1.0,,False,False,20250904
+BLR,1.0,1.05,1.0,,False,False,20250905
+BLR,0.95,0.8,1.0,,True,False,20250906
+BLR,0.85,0.25,1.0,,True,False,20250907
+BLR,1.1,1.05,1.0,,False,False,20250908
+BLR,1.05,1.05,1.0,,True,False,20250909
+BLR,1.0,1.05,1.0,,False,False,20250910
+BLR,1.0,1.05,1.0,,False,False,20250911
+BLR,1.0,1.05,1.0,,False,False,20250912
+BLR,0.95,0.8,1.0,,True,False,20250913
+BLR,0.85,0.25,1.0,,False,False,20250914
+BLR,1.1,1.05,1.0,,False,False,20250915
+BLR,1.05,1.05,1.0,,True,False,20250916
+BLR,1.0,1.05,1.0,,False,False,20250917
+BLR,1.0,1.05,1.0,,True,False,20250918
+BLR,1.0,1.05,1.0,,True,False,20250919
+BLR,0.95,0.8,1.0,,False,False,20250920
+BLR,0.85,0.25,1.0,,True,False,20250921
+BLR,1.1,1.26,1.0,Navratri dealer stocking,False,True,20250922
+BLR,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250923
+BLR,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250924
+BLR,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250925
+BLR,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250926
+BLR,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250927
+BLR,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250928
+BLR,1.6500000000000001,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250929
+BLR,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250930
+BLR,1.35,0.7245,0.9974999999999999,Festive sale wave 1 + Navratri dealer stocking + Ayudha Puja,True,True,20251001
+BLR,1.275,0.43470000000000003,0.9450000000000001,Festive sale wave 1 + Navratri dealer stocking + Dussehra holiday,True,True,20251002
+BLR,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251003
+BLR,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20251004
+BLR,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251005
+BLR,1.1,1.26,1.0,Navratri dealer stocking,False,True,20251006
+BLR,1.05,1.26,1.0,Navratri dealer stocking,False,True,20251007
+BLR,1.0,1.26,1.0,Navratri dealer stocking,False,True,20251008
+BLR,1.0,1.26,1.0,Navratri dealer stocking,False,True,20251009
+BLR,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251010
+BLR,1.805,1.296,1.1,Navratri dealer stocking + Diwali peak,False,True,20251011
+BLR,1.615,0.405,1.1,Navratri dealer stocking + Diwali peak,False,True,20251012
+BLR,2.09,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251013
+BLR,1.9949999999999999,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251014
+BLR,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251015
+BLR,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251016
+BLR,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251017
+BLR,1.805,1.08,1.1,Diwali peak,False,True,20251018
+BLR,1.615,0.3375,1.1,Diwali peak,False,True,20251019
+BLR,0.7150000000000001,0.3675,0.85,Diwali holidays,False,True,20251020
+BLR,0.6825000000000001,0.3675,0.85,Diwali holidays,False,True,20251021
+BLR,0.65,0.3675,0.85,Diwali holidays,True,True,20251022
+BLR,0.65,0.3675,0.85,Diwali holidays,False,True,20251023
+BLR,1.0,1.05,1.0,,True,False,20251024
+BLR,0.95,0.8,1.0,,True,False,20251025
+BLR,0.85,0.25,1.0,,False,False,20251026
+BLR,1.1,1.05,1.0,,False,False,20251027
+BLR,1.05,1.05,1.0,,True,False,20251028
+BLR,1.0,1.05,1.0,,True,False,20251029
+BLR,1.0,1.05,1.0,,False,False,20251030
+BLR,1.0,1.05,1.0,,True,False,20251031
+BLR,0.9025,0.4,0.95,Kannada Rajyotsava,False,True,20251101
+BLR,0.85,0.25,1.0,,False,False,20251102
+BLR,1.1,1.05,1.0,,True,False,20251103
+BLR,1.05,1.05,1.0,,False,False,20251104
+BLR,1.0,1.05,1.0,,False,False,20251105
+BLR,1.0,1.05,1.0,,False,False,20251106
+BLR,1.0,1.05,1.0,,False,False,20251107
+BLR,0.95,0.8,1.0,,False,False,20251108
+BLR,0.85,0.25,1.0,,False,False,20251109
+BLR,1.1,1.05,1.0,,False,False,20251110
+BLR,1.05,1.05,1.0,,False,False,20251111
+BLR,1.0,1.05,1.0,,True,False,20251112
+BLR,1.0,1.05,1.0,,False,False,20251113
+BLR,1.0,1.05,1.0,,True,False,20251114
+BLR,0.95,0.8,1.0,,False,False,20251115
+BLR,0.85,0.25,1.0,,False,False,20251116
+BLR,1.1,1.05,1.0,,False,False,20251117
+BLR,1.05,1.05,1.0,,True,False,20251118
+BLR,1.0,1.05,1.0,,False,False,20251119
+BLR,1.0,1.05,1.0,,False,False,20251120
+BLR,1.0,1.05,1.0,,False,False,20251121
+BLR,0.95,0.8,1.0,,True,False,20251122
+BLR,0.85,0.25,1.0,,True,False,20251123
+BLR,1.1,1.05,1.0,,False,False,20251124
+BLR,1.05,1.05,1.0,,False,False,20251125
+BLR,1.0,1.05,1.0,,True,False,20251126
+BLR,1.0,1.05,1.0,,False,False,20251127
+BLR,1.0,1.05,1.0,,False,False,20251128
+BLR,0.95,0.8,1.0,,False,False,20251129
+CHE,1.1,1.05,1.0,,False,False,20250901
+CHE,1.05,1.05,1.0,,False,False,20250902
+CHE,1.0,1.05,1.0,,True,False,20250903
+CHE,1.0,1.05,1.0,,True,False,20250904
+CHE,1.0,1.05,1.0,,False,False,20250905
+CHE,0.95,0.8,1.0,,False,False,20250906
+CHE,0.85,0.25,1.0,,False,False,20250907
+CHE,1.1,1.05,1.0,,False,False,20250908
+CHE,1.05,1.05,1.0,,False,False,20250909
+CHE,1.0,1.05,1.0,,False,False,20250910
+CHE,1.0,1.05,1.0,,False,False,20250911
+CHE,1.0,1.05,1.0,,False,False,20250912
+CHE,0.95,0.8,1.0,,False,False,20250913
+CHE,0.85,0.25,1.0,,False,False,20250914
+CHE,1.1,1.05,1.0,,False,False,20250915
+CHE,1.05,1.05,1.0,,False,False,20250916
+CHE,1.0,1.05,1.0,,False,False,20250917
+CHE,1.0,1.05,1.0,,False,False,20250918
+CHE,1.0,1.05,1.0,,True,False,20250919
+CHE,0.95,0.8,1.0,,False,False,20250920
+CHE,0.85,0.25,1.0,,False,False,20250921
+CHE,1.1,1.26,1.0,Navratri dealer stocking,False,True,20250922
+CHE,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250923
+CHE,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250924
+CHE,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250925
+CHE,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250926
+CHE,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250927
+CHE,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250928
+CHE,1.6500000000000001,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250929
+CHE,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250930
+CHE,1.35,0.5796,0.9974999999999999,Festive sale wave 1 + Navratri dealer stocking + Ayudha Puja,True,True,20251001
+CHE,1.275,0.43470000000000003,0.9450000000000001,Festive sale wave 1 + Navratri dealer stocking + Dussehra holiday,False,True,20251002
+CHE,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251003
+CHE,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20251004
+CHE,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20251005
+CHE,1.1,1.26,1.0,Navratri dealer stocking,True,True,20251006
+CHE,1.05,1.26,1.0,Navratri dealer stocking,False,True,20251007
+CHE,1.0,1.26,1.0,Navratri dealer stocking,True,True,20251008
+CHE,1.0,1.26,1.0,Navratri dealer stocking,True,True,20251009
+CHE,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251010
+CHE,1.805,1.296,1.1,Navratri dealer stocking + Diwali peak,False,True,20251011
+CHE,1.615,0.405,1.1,Navratri dealer stocking + Diwali peak,False,True,20251012
+CHE,2.09,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251013
+CHE,1.9949999999999999,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251014
+CHE,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251015
+CHE,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251016
+CHE,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251017
+CHE,1.805,1.08,1.1,Diwali peak,False,True,20251018
+CHE,1.615,0.3375,1.1,Diwali peak,False,True,20251019
+CHE,0.7150000000000001,0.3675,0.85,Diwali holidays,False,True,20251020
+CHE,0.6825000000000001,0.3675,0.85,Diwali holidays,True,True,20251021
+CHE,0.65,0.3675,0.85,Diwali holidays,True,True,20251022
+CHE,0.65,0.3675,0.85,Diwali holidays,True,True,20251023
+CHE,1.0,1.05,1.0,,False,False,20251024
+CHE,0.95,0.8,1.0,,False,False,20251025
+CHE,0.85,0.25,1.0,,False,False,20251026
+CHE,1.1,1.05,1.0,,False,False,20251027
+CHE,1.05,1.05,1.0,,False,False,20251028
+CHE,1.0,1.05,1.0,,False,False,20251029
+CHE,1.0,1.05,1.0,,False,False,20251030
+CHE,1.0,1.05,1.0,,False,False,20251031
+CHE,0.95,0.8,1.0,,False,False,20251101
+CHE,0.85,0.25,1.0,,False,False,20251102
+CHE,1.1,1.05,1.0,,True,False,20251103
+CHE,1.05,1.05,1.0,,False,False,20251104
+CHE,1.0,1.05,1.0,,True,False,20251105
+CHE,1.0,1.05,1.0,,False,False,20251106
+CHE,1.0,1.05,1.0,,True,False,20251107
+CHE,0.95,0.8,1.0,,False,False,20251108
+CHE,0.85,0.25,1.0,,True,False,20251109
+CHE,1.1,1.05,1.0,,True,False,20251110
+CHE,1.05,1.05,1.0,,True,False,20251111
+CHE,1.0,1.05,1.0,,False,False,20251112
+CHE,1.0,1.05,1.0,,True,False,20251113
+CHE,1.0,1.05,1.0,,False,False,20251114
+CHE,0.95,0.8,1.0,,False,False,20251115
+CHE,0.85,0.25,1.0,,False,False,20251116
+CHE,1.1,1.05,1.0,,False,False,20251117
+CHE,1.05,1.05,1.0,,False,False,20251118
+CHE,1.0,1.05,1.0,,True,False,20251119
+CHE,1.0,1.05,1.0,,True,False,20251120
+CHE,1.0,1.05,1.0,,True,False,20251121
+CHE,0.95,0.8,1.0,,True,False,20251122
+CHE,0.85,0.25,1.0,,True,False,20251123
+CHE,1.1,1.05,1.0,,True,False,20251124
+CHE,1.05,1.05,1.0,,False,False,20251125
+CHE,1.0,1.05,1.0,,True,False,20251126
+CHE,1.0,1.05,1.0,,True,False,20251127
+CHE,1.0,1.05,1.0,,False,False,20251128
+CHE,0.95,0.8,1.0,,False,False,20251129
+KOL,1.1,1.05,1.0,,False,False,20250901
+KOL,1.05,1.05,1.0,,True,False,20250902
+KOL,1.0,1.05,1.0,,False,False,20250903
+KOL,1.0,1.05,1.0,,True,False,20250904
+KOL,1.0,1.05,1.0,,False,False,20250905
+KOL,0.95,0.8,1.0,,True,False,20250906
+KOL,0.85,0.25,1.0,,False,False,20250907
+KOL,1.1,1.05,1.0,,False,False,20250908
+KOL,1.05,1.05,1.0,,False,False,20250909
+KOL,1.0,1.05,1.0,,False,False,20250910
+KOL,1.0,1.05,1.0,,False,False,20250911
+KOL,1.0,1.05,1.0,,True,False,20250912
+KOL,0.95,0.8,1.0,,False,False,20250913
+KOL,0.85,0.25,1.0,,True,False,20250914
+KOL,1.1,1.05,1.0,,False,False,20250915
+KOL,1.05,1.05,1.0,,False,False,20250916
+KOL,1.0,1.05,1.0,,False,False,20250917
+KOL,1.0,1.05,1.0,,True,False,20250918
+KOL,1.0,1.05,1.0,,True,False,20250919
+KOL,0.95,0.8,1.0,,False,False,20250920
+KOL,0.85,0.25,1.0,,True,False,20250921
+KOL,1.1,1.26,1.0,Navratri dealer stocking,False,True,20250922
+KOL,1.5750000000000002,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,True,True,20250923
+KOL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250924
+KOL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250925
+KOL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250926
+KOL,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20250927
+KOL,0.9562499999999999,0.1035,1.47,Festive sale wave 1 + Navratri dealer stocking + Durga Puja,True,True,20250928
+KOL,1.2375,0.43470000000000003,1.47,Festive sale wave 1 + Navratri dealer stocking + Durga Puja,True,True,20250929
+KOL,1.1812500000000001,0.43470000000000003,1.47,Festive sale wave 1 + Navratri dealer stocking + Durga Puja,False,True,20250930
+KOL,1.125,0.43470000000000003,1.47,Festive sale wave 1 + Navratri dealer stocking + Durga Puja,False,True,20251001
+KOL,0.9562499999999999,0.13041,1.323,Festive sale wave 1 + Navratri dealer stocking + Dussehra holiday + Durga Puja,True,True,20251002
+KOL,1.5,1.449,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251003
+KOL,1.4249999999999998,1.1039999999999999,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251004
+KOL,1.275,0.345,1.05,Festive sale wave 1 + Navratri dealer stocking,False,True,20251005
+KOL,1.1,1.26,1.0,Navratri dealer stocking,False,True,20251006
+KOL,1.05,1.26,1.0,Navratri dealer stocking,False,True,20251007
+KOL,1.0,1.26,1.0,Navratri dealer stocking,True,True,20251008
+KOL,1.0,1.26,1.0,Navratri dealer stocking,False,True,20251009
+KOL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251010
+KOL,1.805,1.296,1.1,Navratri dealer stocking + Diwali peak,False,True,20251011
+KOL,1.615,0.405,1.1,Navratri dealer stocking + Diwali peak,False,True,20251012
+KOL,2.09,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251013
+KOL,1.9949999999999999,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251014
+KOL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251015
+KOL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,True,True,20251016
+KOL,1.9,1.701,1.1,Navratri dealer stocking + Diwali peak,False,True,20251017
+KOL,1.805,1.08,1.1,Diwali peak,False,True,20251018
+KOL,1.615,0.3375,1.1,Diwali peak,False,True,20251019
+KOL,0.7150000000000001,0.3675,0.85,Diwali holidays,False,True,20251020
+KOL,0.6825000000000001,0.3675,0.85,Diwali holidays,False,True,20251021
+KOL,0.65,0.3675,0.85,Diwali holidays,False,True,20251022
+KOL,0.65,0.3675,0.85,Diwali holidays,False,True,20251023
+KOL,1.0,1.05,1.0,,False,False,20251024
+KOL,0.95,0.8,1.0,,False,False,20251025
+KOL,0.85,0.25,1.0,,False,False,20251026
+KOL,1.1,1.05,1.0,,False,False,20251027
+KOL,1.05,1.05,1.0,,False,False,20251028
+KOL,1.0,1.05,1.0,,False,False,20251029
+KOL,1.0,1.05,1.0,,False,False,20251030
+KOL,1.0,1.05,1.0,,False,False,20251031
+KOL,0.95,0.8,1.0,,False,False,20251101
+KOL,0.85,0.25,1.0,,False,False,20251102
+KOL,1.1,1.05,1.0,,False,False,20251103
+KOL,1.05,1.05,1.0,,False,False,20251104
+KOL,1.0,1.05,1.0,,False,False,20251105
+KOL,1.0,1.05,1.0,,False,False,20251106
+KOL,1.0,1.05,1.0,,False,False,20251107
+KOL,0.95,0.8,1.0,,False,False,20251108
+KOL,0.85,0.25,1.0,,True,False,20251109
+KOL,1.1,1.05,1.0,,False,False,20251110
+KOL,1.05,1.05,1.0,,False,False,20251111
+KOL,1.0,1.05,1.0,,False,False,20251112
+KOL,1.0,1.05,1.0,,False,False,20251113
+KOL,1.0,1.05,1.0,,False,False,20251114
+KOL,0.95,0.8,1.0,,False,False,20251115
+KOL,0.85,0.25,1.0,,False,False,20251116
+KOL,1.1,1.05,1.0,,False,False,20251117
+KOL,1.05,1.05,1.0,,False,False,20251118
+KOL,1.0,1.05,1.0,,False,False,20251119
+KOL,1.0,1.05,1.0,,False,False,20251120
+KOL,1.0,1.05,1.0,,False,False,20251121
+KOL,0.95,0.8,1.0,,False,False,20251122
+KOL,0.85,0.25,1.0,,False,False,20251123
+KOL,1.1,1.05,1.0,,False,False,20251124
+KOL,1.05,1.05,1.0,,False,False,20251125
+KOL,1.0,1.05,1.0,,False,False,20251126
+KOL,1.0,1.05,1.0,,False,False,20251127
+KOL,1.0,1.05,1.0,,False,False,20251128
+KOL,0.95,0.8,1.0,,False,False,20251129

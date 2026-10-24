@@ -1,0 +1,26 @@
+dest_zone,factor
+Andheri,0.9919
+Bandra,0.9907
+Central Bengaluru,1.128
+Central Chennai,0.9104
+Central Delhi,0.9564
+Central Kolkata,1.0766
+East Bengaluru,1.1233
+East Kolkata,1.039
+Gurugram,0.9289
+Howrah,1.1016
+Navi Mumbai,0.9644
+Noida,0.9097
+North Bengaluru,1.1079
+North Chennai,0.8993
+North Kolkata,1.0519
+OMR Corridor,0.8498
+South Bengaluru,1.1128
+South Chennai,0.8803
+South Delhi,0.9295
+South Kolkata,1.058
+South Mumbai,1.0184
+Thane,0.9799
+West Bengaluru,1.1113
+West Chennai,0.8776
+West Delhi,0.9429

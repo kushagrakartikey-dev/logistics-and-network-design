@@ -1,0 +1,481 @@
+# =============================================================================
+# Project 6 — Logistics and Network Design
+# Multi-state scenario: five metro clusters across Maharashtra, Delhi,
+# Haryana, Uttar Pradesh, Karnataka, Tamil Nadu and West Bengal.
+# Every numeric assumption lives here and is listed in the master register.
+# Units: distances km, times minutes-since-midnight unless stated, money INR.
+# =============================================================================
+
+project:
+  name: Logistics and Network Design
+  portfolio_output: 6
+  currency: INR
+  seed: 42
+
+paths:
+  data_dir: data/logistics
+  output_dir: outputs/logistics
+  maps_dir: outputs/logistics/maps
+  tables_dir: outputs/logistics/tables
+  bi_dir: outputs/logistics/bi
+  command_center_dir: outputs/command_center
+  workbook: outputs/logistics_and_network_design.xlsx
+  static_payload: dashboard/static/data/payload.json
+
+calendar:
+  start_date: "2025-09-01"
+  days: 90
+  diwali_date: "2025-10-20"
+  # National events (all clusters). City events are listed under each city.
+  events:
+    - {name: Festive sale wave 1, start: "2025-09-23", end: "2025-10-05", b2c: 1.50, b2b: 1.15, traffic: 1.05}
+    - {name: Navratri dealer stocking, start: "2025-09-22", end: "2025-10-17", b2c: 1.00, b2b: 1.20, traffic: 1.00}
+    - {name: Dussehra holiday, start: "2025-10-02", end: "2025-10-02", b2c: 0.85, b2b: 0.30, traffic: 0.90}
+    - {name: Diwali peak, start: "2025-10-10", end: "2025-10-19", b2c: 1.90, b2b: 1.35, traffic: 1.10}
+    - {name: Diwali holidays, start: "2025-10-20", end: "2025-10-23", b2c: 0.65, b2b: 0.35, traffic: 0.85}
+  weekday_factor:
+    b2c: [1.10, 1.05, 1.00, 1.00, 1.00, 0.95, 0.85]   # Mon..Sun
+    b2b: [1.05, 1.05, 1.05, 1.05, 1.05, 0.80, 0.25]
+
+# -----------------------------------------------------------------------------
+# Metro clusters. Depot roles: DC = regional distribution centre (outskirts),
+# MFC = existing micro-fulfilment centre, HUB = cross-dock hub.
+# -----------------------------------------------------------------------------
+cities:
+  MUM:
+    name: Mumbai MMR
+    state: Maharashtra
+    volume_weight: 1.00
+    congestion: 1.00          # observed travel-time index in trip logs
+    wage_index: 1.00
+    bbox: {lat_min: 18.87, lat_max: 19.30, lon_min: 72.77, lon_max: 73.10}
+    rain_probability_by_month: {9: 0.45, 10: 0.15, 11: 0.05}
+    events:
+      - {name: Ganesh Visarjan, start: "2025-09-06", end: "2025-09-06", b2c: 0.80, b2b: 0.40, traffic: 1.35}
+    depots:
+      - {depot_id: DEP-MUM-DC, role: DC, name: Bhiwandi DC, lat: 19.2813, lon: 73.0483}
+      - {depot_id: DEP-MUM-MFC, role: MFC, name: Andheri MFC, lat: 19.1176, lon: 72.8697}
+      - {depot_id: DEP-MUM-HUB, role: HUB, name: Navi Mumbai Hub, lat: 19.0745, lon: 73.0170}
+    depot_zone: {DC: Thane, MFC: Andheri, HUB: Navi Mumbai}
+    zones:
+      South Mumbai: {state: Maharashtra, share: 0.18, circuity: 1.45, sigma_deg: 0.0030, anchors: [[Colaba, 18.9150, 72.8270], [Fort, 18.9338, 72.8355], [Marine Lines, 18.9447, 72.8290], [Byculla, 18.9790, 72.8330], [Tardeo, 18.9700, 72.8180]]}
+      Bandra: {state: Maharashtra, share: 0.20, circuity: 1.40, anchors: [[Bandra West, 19.0596, 72.8295], [Bandra Kurla Complex, 19.0660, 72.8650], [Khar, 19.0712, 72.8370], [Santacruz, 19.0810, 72.8410]]}
+      Andheri: {state: Maharashtra, share: 0.24, circuity: 1.38, anchors: [[Andheri West, 19.1364, 72.8296], [Andheri East MIDC, 19.1155, 72.8700], [Jogeshwari, 19.1380, 72.8490], [Vile Parle, 19.0990, 72.8490]]}
+      Thane: {state: Maharashtra, share: 0.20, circuity: 1.30, anchors: [[Thane West, 19.2183, 72.9781], [Majiwada, 19.2335, 72.9860], [Wagle Estate, 19.2050, 72.9530], [Kopri, 19.1950, 72.9850]]}
+      Navi Mumbai: {state: Maharashtra, share: 0.18, circuity: 1.25, anchors: [[Vashi, 19.0771, 72.9986], [Nerul, 19.0330, 73.0197], [CBD Belapur, 19.0230, 73.0400], [Airoli, 19.1590, 72.9990], [Kharghar, 19.0470, 73.0650]]}
+    candidate_sites:
+      - [Goregaon East, 19.1663, 72.8526, 115]
+      - [Malad West, 19.1874, 72.8484, 100]
+      - [Kurla, 19.0726, 72.8845, 115]
+      - [Vashi, 19.0771, 72.9986, 80]
+      - [Kalyan, 19.2403, 73.1305, 45]
+      - [Powai, 19.1176, 72.9060, 135]
+      - [Ghatkopar, 19.0860, 72.9081, 110]
+      - [Thane Majiwada, 19.2335, 72.9760, 75]
+      - [Dadar, 19.0178, 72.8478, 165]
+      - [Lower Parel, 18.9980, 72.8300, 210]
+      - [Chembur, 19.0522, 72.9005, 105]
+      - [Mulund, 19.1726, 72.9425, 85]
+      - [Borivali, 19.2307, 72.8567, 95]
+      - [Airoli, 19.1590, 72.9990, 65]
+      - [Byculla, 18.9790, 72.8330, 150]
+  DEL:
+    name: Delhi NCR
+    state: Delhi / Haryana / Uttar Pradesh
+    volume_weight: 1.05
+    congestion: 0.95
+    wage_index: 1.00
+    bbox: {lat_min: 28.38, lat_max: 28.76, lon_min: 76.95, lon_max: 77.48}
+    rain_probability_by_month: {9: 0.20, 10: 0.03, 11: 0.02}
+    events:
+      - {name: Chhath Puja, start: "2025-10-27", end: "2025-10-28", b2c: 0.90, b2b: 0.60, traffic: 1.10}
+    depots:
+      - {depot_id: DEP-DEL-DC, role: DC, name: Gurugram Bilaspur DC, lat: 28.3120, lon: 76.8670}
+      - {depot_id: DEP-DEL-MFC, role: MFC, name: Okhla MFC, lat: 28.5350, lon: 77.2780}
+      - {depot_id: DEP-DEL-HUB, role: HUB, name: Noida Hub, lat: 28.6270, lon: 77.3770}
+    depot_zone: {DC: Gurugram, MFC: South Delhi, HUB: Noida}
+    zones:
+      Central Delhi: {state: Delhi, share: 0.18, circuity: 1.42, anchors: [[Connaught Place, 28.6315, 77.2167], [Karol Bagh, 28.6519, 77.1909], [Paharganj, 28.6450, 77.2140], [Daryaganj, 28.6460, 77.2410]]}
+      South Delhi: {state: Delhi, share: 0.22, circuity: 1.36, anchors: [[Saket, 28.5240, 77.2060], [Hauz Khas, 28.5490, 77.2000], [Lajpat Nagar, 28.5670, 77.2430], [Vasant Kunj, 28.5200, 77.1580]]}
+      West Delhi: {state: Delhi, share: 0.20, circuity: 1.33, anchors: [[Janakpuri, 28.6210, 77.0870], [Rajouri Garden, 28.6490, 77.1220], [Punjabi Bagh, 28.6680, 77.1320], [Dwarka, 28.5920, 77.0460]]}
+      Gurugram: {state: Haryana, share: 0.20, circuity: 1.30, anchors: [[Cyber City, 28.4950, 77.0890], [Sohna Road, 28.4200, 77.0400], [Sector 56, 28.4240, 77.1010], [DLF Phase 1, 28.4720, 77.0930]]}
+      Noida: {state: Uttar Pradesh, share: 0.20, circuity: 1.24, anchors: [[Sector 18, 28.5700, 77.3210], [Sector 62, 28.6260, 77.3650], [Sector 50, 28.5700, 77.3600], [Greater Noida West, 28.6050, 77.4370]]}
+    candidate_sites:
+      - [Saket, 28.5240, 77.2060, 160]
+      - [Karol Bagh, 28.6519, 77.1909, 140]
+      - [Janakpuri, 28.6210, 77.0870, 95]
+      - [Dwarka, 28.5920, 77.0460, 85]
+      - [Lajpat Nagar, 28.5670, 77.2430, 150]
+      - [Gurugram Sector 44, 28.4520, 77.0720, 110]
+      - [Noida Sector 18, 28.5700, 77.3210, 120]
+      - [Mayapuri, 28.6370, 77.1290, 90]
+      - [Patparganj, 28.6230, 77.2970, 85]
+      - [Rohini, 28.7350, 77.0600, 80]
+  BLR:
+    name: Bengaluru
+    state: Karnataka
+    volume_weight: 0.85
+    congestion: 1.12
+    wage_index: 1.02
+    bbox: {lat_min: 12.80, lat_max: 13.15, lon_min: 77.45, lon_max: 77.80}
+    rain_probability_by_month: {9: 0.35, 10: 0.35, 11: 0.15}
+    events:
+      - {name: Ayudha Puja, start: "2025-10-01", end: "2025-10-01", b2c: 0.90, b2b: 0.50, traffic: 0.95}
+      - {name: Kannada Rajyotsava, start: "2025-11-01", end: "2025-11-01", b2c: 0.95, b2b: 0.50, traffic: 0.95}
+    depots:
+      - {depot_id: DEP-BLR-DC, role: DC, name: Hoskote DC, lat: 13.0700, lon: 77.7980}
+      - {depot_id: DEP-BLR-MFC, role: MFC, name: Koramangala MFC, lat: 12.9350, lon: 77.6240}
+      - {depot_id: DEP-BLR-HUB, role: HUB, name: Peenya Hub, lat: 13.0300, lon: 77.5200}
+    depot_zone: {DC: East Bengaluru, MFC: South Bengaluru, HUB: West Bengaluru}
+    zones:
+      Central Bengaluru: {state: Karnataka, share: 0.18, circuity: 1.40, anchors: [[MG Road, 12.9750, 77.6060], [Shivajinagar, 12.9860, 77.6040], [Malleshwaram, 13.0030, 77.5700], [Basavanagudi, 12.9420, 77.5750]]}
+      East Bengaluru: {state: Karnataka, share: 0.24, circuity: 1.38, anchors: [[Whitefield, 12.9700, 77.7500], [Indiranagar, 12.9780, 77.6410], [Marathahalli, 12.9590, 77.6970], [KR Puram, 13.0070, 77.6960]]}
+      South Bengaluru: {state: Karnataka, share: 0.22, circuity: 1.35, anchors: [[Jayanagar, 12.9250, 77.5930], [JP Nagar, 12.9060, 77.5850], [BTM Layout, 12.9160, 77.6100], [Electronic City, 12.8450, 77.6600]]}
+      North Bengaluru: {state: Karnataka, share: 0.18, circuity: 1.30, anchors: [[Hebbal, 13.0350, 77.5970], [Yelahanka, 13.1000, 77.5960], [RT Nagar, 13.0210, 77.5950], [Hennur, 13.0350, 77.6400]]}
+      West Bengaluru: {state: Karnataka, share: 0.18, circuity: 1.32, anchors: [[Rajajinagar, 12.9910, 77.5540], [Vijayanagar, 12.9710, 77.5370], [Kengeri, 12.9120, 77.4830], [Yeshwanthpur, 13.0280, 77.5400]]}
+    candidate_sites:
+      - [Indiranagar, 12.9780, 77.6410, 150]
+      - [HSR Layout, 12.9120, 77.6450, 120]
+      - [Whitefield, 12.9700, 77.7500, 95]
+      - [Hebbal, 13.0350, 77.5970, 100]
+      - [Jayanagar, 12.9250, 77.5930, 130]
+      - [Rajajinagar, 12.9910, 77.5540, 100]
+      - [Yelahanka, 13.1000, 77.5960, 70]
+      - [Electronic City, 12.8450, 77.6600, 65]
+      - [Banashankari, 12.9250, 77.5460, 95]
+      - [KR Puram, 13.0070, 77.6960, 75]
+  CHE:
+    name: Chennai
+    state: Tamil Nadu
+    volume_weight: 0.70
+    congestion: 0.92
+    wage_index: 0.92
+    bbox: {lat_min: 12.82, lat_max: 13.17, lon_min: 80.10, lon_max: 80.30}
+    rain_probability_by_month: {9: 0.20, 10: 0.45, 11: 0.50}
+    events:
+      - {name: Ayudha Puja, start: "2025-10-01", end: "2025-10-01", b2c: 0.90, b2b: 0.40, traffic: 0.95}
+    depots:
+      - {depot_id: DEP-CHE-DC, role: DC, name: Sriperumbudur DC, lat: 12.9680, lon: 79.9460}
+      - {depot_id: DEP-CHE-MFC, role: MFC, name: Guindy MFC, lat: 13.0070, lon: 80.2130}
+      - {depot_id: DEP-CHE-HUB, role: HUB, name: Ambattur Hub, lat: 13.1140, lon: 80.1550}
+    depot_zone: {DC: West Chennai, MFC: South Chennai, HUB: North Chennai}
+    zones:
+      Central Chennai: {state: Tamil Nadu, share: 0.20, circuity: 1.38, sigma_deg: 0.0035, anchors: [[T Nagar, 13.0420, 80.2340], [Egmore, 13.0730, 80.2610], [Nungambakkam, 13.0600, 80.2420], [Mylapore, 13.0340, 80.2650]]}
+      North Chennai: {state: Tamil Nadu, share: 0.18, circuity: 1.33, anchors: [[Perambur, 13.1150, 80.2330], [Tondiarpet, 13.1260, 80.2820], [Kolathur, 13.1240, 80.2120], [Madhavaram, 13.1480, 80.2310]]}
+      West Chennai: {state: Tamil Nadu, share: 0.22, circuity: 1.30, anchors: [[Anna Nagar, 13.0850, 80.2100], [Porur, 13.0350, 80.1580], [Vadapalani, 13.0500, 80.2120], [Koyambedu, 13.0700, 80.1950]]}
+      South Chennai: {state: Tamil Nadu, share: 0.20, circuity: 1.32, anchors: [[Velachery, 12.9760, 80.2210], [Adyar, 13.0010, 80.2530], [Tambaram, 12.9250, 80.1180], [Pallavaram, 12.9680, 80.1500]]}
+      OMR Corridor: {state: Tamil Nadu, share: 0.20, circuity: 1.22, anchors: [[Sholinganallur, 12.9010, 80.2270], [Thoraipakkam, 12.9370, 80.2340], [Perungudi, 12.9660, 80.2460], [Navalur, 12.8460, 80.2260]]}
+    candidate_sites:
+      - [T Nagar, 13.0420, 80.2340, 140]
+      - [Anna Nagar, 13.0850, 80.2100, 120]
+      - [Velachery, 12.9760, 80.2210, 100]
+      - [Porur, 13.0350, 80.1580, 75]
+      - [Perungudi, 12.9660, 80.2460, 95]
+      - [Kolathur, 13.1240, 80.2120, 65]
+      - [Tambaram, 12.9250, 80.1180, 55]
+      - [Adyar, 13.0010, 80.2530, 130]
+      - [Madhavaram, 13.1480, 80.2310, 50]
+      - [Vadapalani, 13.0500, 80.2120, 110]
+  KOL:
+    name: Kolkata
+    state: West Bengal
+    volume_weight: 0.60
+    congestion: 1.05
+    wage_index: 0.85
+    bbox: {lat_min: 22.45, lat_max: 22.70, lon_min: 88.25, lon_max: 88.50}
+    rain_probability_by_month: {9: 0.45, 10: 0.20, 11: 0.03}
+    events:
+      - {name: Durga Puja, start: "2025-09-28", end: "2025-10-02", b2c: 0.75, b2b: 0.30, traffic: 1.40}
+    depots:
+      - {depot_id: DEP-KOL-DC, role: DC, name: Dankuni DC, lat: 22.6800, lon: 88.2930}
+      - {depot_id: DEP-KOL-MFC, role: MFC, name: Salt Lake Sector V MFC, lat: 22.5726, lon: 88.4339}
+      - {depot_id: DEP-KOL-HUB, role: HUB, name: Howrah Hub, lat: 22.5950, lon: 88.2630}
+    depot_zone: {DC: Howrah, MFC: East Kolkata, HUB: Howrah}
+    zones:
+      Central Kolkata: {state: West Bengal, share: 0.20, circuity: 1.45, sigma_deg: 0.0035, anchors: [[Park Street, 22.5530, 88.3520], [Esplanade, 22.5650, 88.3510], [BBD Bagh, 22.5720, 88.3490], [Sealdah, 22.5670, 88.3700]]}
+      North Kolkata: {state: West Bengal, share: 0.18, circuity: 1.40, anchors: [[Shyambazar, 22.6010, 88.3710], [Dum Dum, 22.6280, 88.4180], [Baranagar, 22.6430, 88.3650], [Belgachia, 22.6050, 88.3850]]}
+      South Kolkata: {state: West Bengal, share: 0.22, circuity: 1.36, anchors: [[Ballygunge, 22.5270, 88.3640], [Jadavpur, 22.4970, 88.3710], [Behala, 22.5000, 88.3110], [Tollygunge, 22.4990, 88.3450]]}
+      East Kolkata: {state: West Bengal, share: 0.22, circuity: 1.25, anchors: [[Salt Lake, 22.5800, 88.4150], [New Town, 22.5810, 88.4610], [Rajarhat, 22.6200, 88.4500], [Kasba, 22.5170, 88.3900]]}
+      Howrah: {state: West Bengal, share: 0.18, circuity: 1.50, anchors: [[Howrah Maidan, 22.5870, 88.3120], [Shibpur, 22.5700, 88.3200], [Bally, 22.6500, 88.3400], [Santragachi, 22.5830, 88.2840]]}
+    candidate_sites:
+      - [Park Circus, 22.5400, 88.3700, 110]
+      - [New Town, 22.5810, 88.4610, 70]
+      - [Behala, 22.5000, 88.3110, 60]
+      - [Jadavpur, 22.4970, 88.3710, 70]
+      - [Dum Dum, 22.6280, 88.4180, 55]
+      - [Shyambazar, 22.6010, 88.3710, 65]
+      - [Howrah Maidan, 22.5870, 88.3120, 55]
+      - [Tollygunge, 22.4990, 88.3450, 75]
+      - [Kasba, 22.5170, 88.3900, 80]
+      - [Bally, 22.6500, 88.3400, 45]
+
+geography:
+  anchor_sigma_deg: 0.0045
+  # Network-wide straight-line-to-road conversion used for planning when no
+  # zone calibration is available (zone circuity above is observed in trip logs)
+  planning_circuity: 1.35
+
+fleet:
+  vehicle_types:
+    VAN_2T:
+      label: 2-ton van
+      count: 10
+      capacity_kg: 2000
+      speed_kmph: 26
+      cost_per_km: 18.0
+      fixed_cost_per_day: 2800
+      driver_wage_per_hour: 230
+      max_route_minutes: 600
+      # goods-vehicle entry restrictions in each city's core business district
+      restricted_zones: [South Mumbai, Central Delhi, Central Bengaluru, Central Chennai, Central Kolkata]
+      acquisition_cost: 2400000
+      lease_per_month: 62000
+      maintenance_per_km: 2.6
+      insurance_per_year: 55000
+      useful_life_years: 6
+      residual_value_pct: 0.15
+    TEMPO_1T:
+      label: 1-ton tempo
+      count: 10
+      capacity_kg: 1000
+      speed_kmph: 28
+      cost_per_km: 13.0
+      fixed_cost_per_day: 1900
+      driver_wage_per_hour: 210
+      max_route_minutes: 600
+      restricted_zones: []
+      acquisition_cost: 1050000
+      lease_per_month: 31000
+      maintenance_per_km: 1.8
+      insurance_per_year: 28000
+      useful_life_years: 6
+      residual_value_pct: 0.15
+    TWO_WHEELER:
+      label: 2-wheeler
+      count: 5
+      capacity_kg: 40
+      speed_kmph: 30
+      cost_per_km: 3.5
+      fixed_cost_per_day: 450
+      driver_wage_per_hour: 160
+      max_route_minutes: 480
+      restricted_zones: []
+      max_order_kg: 15
+      acquisition_cost: 115000
+      lease_per_month: 4200
+      maintenance_per_km: 0.6
+      insurance_per_year: 3500
+      useful_life_years: 4
+      residual_value_pct: 0.10
+  # vehicles per depot role in every city (sums equal the per-city type counts)
+  allocation_by_role:
+    DC: {VAN_2T: 6, TEMPO_1T: 4, TWO_WHEELER: 0}
+    MFC: {VAN_2T: 1, TEMPO_1T: 3, TWO_WHEELER: 3}
+    HUB: {VAN_2T: 3, TEMPO_1T: 3, TWO_WHEELER: 2}
+  operating_days_per_year: 310
+  fuel_share_of_cost_per_km: 0.72
+addresses:
+  count_per_city: 500
+  segment_mix: {ECOM_B2C: 0.60, FMCG_RETAIL: 0.17, MODERN_RETAIL: 0.11, AUTOMOTIVE: 0.12}
+
+orders:
+  base_daily_orders: 255          # per city at volume_weight 1.0
+  segment_order_share: {ECOM_B2C: 0.62, FMCG_RETAIL: 0.17, MODERN_RETAIL: 0.10, AUTOMOTIVE: 0.11}
+  weight_kg:     # lognormal (median, sigma) with clip bounds
+    ECOM_B2C: {median: 2.4, sigma: 0.85, min: 0.2, max: 25}
+    FMCG_RETAIL: {median: 120, sigma: 0.55, min: 25, max: 480}
+    MODERN_RETAIL: {median: 170, sigma: 0.50, min: 40, max: 650}
+    AUTOMOTIVE: {median: 75, sigma: 0.75, min: 8, max: 520}
+  lines:          # order lines (SKU lines) per order: Poisson mean + 1
+    ECOM_B2C: 1.2
+    FMCG_RETAIL: 14
+    MODERN_RETAIL: 22
+    AUTOMOTIVE: 6
+  express_share: {ECOM_B2C: 0.22, FMCG_RETAIL: 0.05, MODERN_RETAIL: 0.08, AUTOMOTIVE: 0.35}
+  time_windows:   # [start, end] minutes since midnight
+    ECOM_B2C: [[540, 720], [720, 900], [900, 1080], [1080, 1260]]
+    ECOM_B2C_EXPRESS: [[600, 720], [840, 960], [1080, 1200]]
+    FMCG_RETAIL: [[540, 780], [600, 960], [840, 1080]]
+    MODERN_RETAIL: [[480, 720], [600, 900], [840, 1080]]
+    AUTOMOTIVE: [[480, 720], [660, 900], [840, 1080]]
+    AUTOMOTIVE_EXPRESS: [[480, 600], [660, 780], [840, 960]]
+  service_minutes: {ECOM_B2C: 4.0, B2B_BASE: 10.0, B2B_PER_KG: 0.035}
+  intake_window_min: [360, 1140]   # order intake 06:00-19:00 (for operations simulation)
+  # Stocking policy by depot role: each order ships from its nearest stocking depot in its city
+  stocking_roles:
+    ECOM_B2C: [DC, MFC, HUB]
+    FMCG_RETAIL: [HUB]
+    MODERN_RETAIL: [DC]
+    AUTOMOTIVE: [DC]
+
+traffic:
+  # Clock-time multipliers on free-flow travel time
+  bands:
+    - {name: early, start: 0, end: 480, factor: 1.0}
+    - {name: morning peak, start: 480, end: 660, factor: 1.8}
+    - {name: midday, start: 660, end: 1020, factor: 1.1}
+    - {name: evening peak, start: 1020, end: 1260, factor: 2.2}
+    - {name: night, start: 1260, end: 1440, factor: 1.0}
+
+telematics:
+  trip_logs_per_day: 120          # per city
+  rain_travel_factor: 1.18
+  vehicle_speed_factor: {VAN_2T: 1.06, TEMPO_1T: 1.00, TWO_WHEELER: 0.82}
+  noise_sigma: 0.16
+
+routing:
+  objective: cost            # cost | distance | time
+  time_limit_s: 30                # upper bound per depot; scaled by depot size
+  seconds_per_order: 0.2
+  first_solution: PATH_CHEAPEST_ARC
+  metaheuristic: GUIDED_LOCAL_SEARCH
+  drop_penalty: 1000000      # INR-scaled penalty for leaving an order unassigned
+  duty_buffer_pct: 0.06      # plan routes to 94% of the duty limit (traffic replay headroom)
+  outsourcing_cost: {ECOM_B2C: 220, FMCG_RETAIL: 2600, MODERN_RETAIL: 3200, AUTOMOTIVE: 2400}
+  use_ml_travel_calibration: true
+  representative_day: auto   # auto = median-volume non-event weekday
+
+fleet_sizing:
+  demand_multipliers: [0.5, 0.75, 1.0, 1.5, 2.0, 3.0]
+  compliance_target: 0.95
+  time_limit_s: 8                 # per depot, candidate-pool solve (decides the recommended fleet)
+  current_time_limit_s: 3         # per depot, current-fleet check
+  pool_factor: 1.6           # candidate pool = ceil(current * max(1,m) * pool_factor) per depot/type
+  leasing_admin_pct: 0.03
+
+warehouse:
+  aisles: 50
+  bays_per_side: 20
+  levels: 5
+  aisle_pitch_m: 3.2
+  bay_width_m: 1.3
+  front_offset_m: 4.0
+  zone_slot_counts: {A: 2000, B: 4000, C: 4000}
+  sku_count: 7200
+  families: 260
+  heavy_threshold_kg: 10
+  heavy_allowed_levels: [1, 2]
+  velocity_shrinkage_grid: [0.0, 0.25, 0.5, 1.0]   # chosen by internal validation on training picks
+  reach_penalty_m: 0.0               # extra metres-equivalent per level 4-5 slot in slot ranking
+  pick_orders: 30000                 # ~65 days of pick history at volume_weight 1.0
+  batch_size: 3
+  walk_speed_mps: 0.9
+  pick_seconds_base: 9.0
+  pick_seconds_upper_levels: 7.0     # levels 4-5 need reach / step ladder
+  pick_seconds_heavy_upper: 12.0     # heavy item handled above approved level
+  tour_setup_seconds: 60
+  picker_wage_per_hour: 185
+
+simulation:
+  replications: 200
+  search_replications: 30
+  shift_start_min: 360
+  shift_end_min: 1320
+  wave_interval_min: 30
+  pick_line_seconds_mean: 45
+  pick_line_seconds_sd: 10
+  pack_minutes: [3, 8]
+  qc_rate: 0.05
+  qc_minutes_mean: 4.0
+  qc_minutes_sd: 1.0
+  dispatch_minutes: [2, 6]
+  cycle_time_target_min: 120
+  baseline_staffing: {pickers: 5, packers: 3, qc: 1, loaders: 2}
+  staffing_cost_per_shift: {pickers: 1480, packers: 1400, qc: 1700, loaders: 1350}
+  staffing_search_bounds: {pickers: [2, 24], packers: [1, 16], qc: [1, 3], loaders: [1, 6]}
+  diwali_peak_factor: auto   # auto = peak-day volume / representative-day volume from orders
+
+network:
+  p_values: [1, 2, 3, 4, 5]
+  mfc_area_sqft: 4500
+  mfc_capex_inr: 6500000          # racking, fit-out, IT, MHE, deposits
+  mfc_staff_cost_per_year: 2100000   # scaled by city wage_index
+  mfc_utilities_per_year: 480000
+  mfc_capacity_orders_per_day: 450
+  eligible_segments: [ECOM_B2C]   # B2B bulk keeps shipping from DC/hub
+  linehaul_cost_per_km: 32
+  linehaul_trips_per_day: 2
+  wacc: 0.12
+  horizon_years: 5
+  demand_growth: 0.18
+  sla_minutes: 120
+  sla_processing_minutes: 40
+  sla_traffic_factor: 2.2        # promise must hold at evening peak
+  sla_speed_kmph: 28
+  sensitivity:
+    wacc: [0.10, 0.12, 0.14]
+    capex_pct: [-0.2, 0.0, 0.2]
+    growth: [0.08, 0.18, 0.28]
+    variable_cost_pct: [-0.2, 0.0, 0.2]
+
+ml:
+  validation_days: 21
+  random_state: 42
+  gbr: {n_estimators: 300, max_depth: 3, learning_rate: 0.05, subsample: 0.85}
+
+
+# -----------------------------------------------------------------------------
+# Master data register: every parameter a reader should be able to audit.
+# `key` is a dotted path into this file; value is resolved at export time.
+# -----------------------------------------------------------------------------
+register:
+  - {key: project.seed, unit: "-", rationale: "Fixed seed so every run reproduces identical data and results", modules: [all]}
+  - {key: calendar.start_date, unit: date, rationale: "90-day window covering monsoon tail, festive sales and Diwali", modules: [data, ml, simulation]}
+  - {key: calendar.days, unit: days, rationale: "Planning history length specified for the scenario", modules: [data, ml]}
+  - {key: calendar.diwali_date, unit: date, rationale: "Diwali 2025 (Lakshmi Puja); national peak build-up precedes it", modules: [data, fleet, simulation]}
+  - {key: cities.MUM.volume_weight, unit: index, rationale: "Mumbai MMR (Maharashtra) order volume relative to base", modules: [data]}
+  - {key: cities.DEL.volume_weight, unit: index, rationale: "Delhi NCR (Delhi, Haryana, UP) order volume relative to base", modules: [data]}
+  - {key: cities.BLR.volume_weight, unit: index, rationale: "Bengaluru (Karnataka) order volume relative to base", modules: [data]}
+  - {key: cities.CHE.volume_weight, unit: index, rationale: "Chennai (Tamil Nadu) order volume relative to base", modules: [data]}
+  - {key: cities.KOL.volume_weight, unit: index, rationale: "Kolkata (West Bengal) order volume relative to base", modules: [data]}
+  - {key: cities.BLR.congestion, unit: index, rationale: "Observed travel-time index in Bengaluru trip logs (highest congestion)", modules: [data, ml]}
+  - {key: cities.CHE.rain_probability_by_month, unit: probability, rationale: "North-east monsoon raises Oct-Nov rain days in Chennai", modules: [data, ml]}
+  - {key: cities.KOL.events, unit: event list, rationale: "Durga Puja: B2B shutdown and heavy pandal traffic in Kolkata", modules: [data, ml, simulation]}
+  - {key: cities.DEL.events, unit: event list, rationale: "Chhath Puja demand dip in Delhi NCR", modules: [data, ml]}
+  - {key: cities.MUM.events, unit: event list, rationale: "Ganesh Visarjan processions in Mumbai", modules: [data, ml]}
+  - {key: cities.KOL.wage_index, unit: index, rationale: "Regional wage level vs Mumbai (drivers, warehouse, MFC staff)", modules: [vrp, fleet, simulation, network]}
+  - {key: geography.planning_circuity, unit: ratio, rationale: "Road km / straight-line km used for planning without zone calibration (typical Indian metro 1.3-1.4)", modules: [vrp, fleet, network]}
+  - {key: cities.KOL.zones.Howrah.circuity, unit: ratio, rationale: "Observed road/straight-line ratio; river crossing via limited bridges", modules: [data, ml]}
+  - {key: cities.MUM.zones.South Mumbai.circuity, unit: ratio, rationale: "Observed road/straight-line ratio, peninsula with one-ways", modules: [data, ml]}
+  - {key: fleet.vehicle_types.VAN_2T.capacity_kg, unit: kg, rationale: "Payload of 2-ton light commercial van", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.TEMPO_1T.capacity_kg, unit: kg, rationale: "Payload of 1-ton tempo", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.TWO_WHEELER.capacity_kg, unit: kg, rationale: "Cargo-box payload of delivery 2-wheeler", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.TWO_WHEELER.max_order_kg, unit: kg, rationale: "Largest single parcel a rider can carry", modules: [vrp]}
+  - {key: fleet.vehicle_types.VAN_2T.cost_per_km, unit: INR/km, rationale: "Diesel + tyres + running maintenance", modules: [vrp, fleet, network]}
+  - {key: fleet.vehicle_types.TEMPO_1T.cost_per_km, unit: INR/km, rationale: "CNG tempo running cost", modules: [vrp, fleet, network]}
+  - {key: fleet.vehicle_types.TWO_WHEELER.cost_per_km, unit: INR/km, rationale: "Petrol/EV 2-wheeler running cost", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.VAN_2T.fixed_cost_per_day, unit: INR/day, rationale: "Lease/depreciation, insurance, permits per operating day", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.VAN_2T.driver_wage_per_hour, unit: INR/h, rationale: "Loaded driver cost at Mumbai wage level (scaled by city wage_index)", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.VAN_2T.speed_kmph, unit: km/h, rationale: "Free-flow urban speed before traffic multiplier", modules: [vrp, fleet, network]}
+  - {key: fleet.vehicle_types.VAN_2T.max_route_minutes, unit: min, rationale: "Driver duty limit", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.VAN_2T.restricted_zones, unit: list, rationale: "Goods-vehicle entry restrictions in each city's core business district", modules: [vrp, fleet]}
+  - {key: fleet.vehicle_types.VAN_2T.acquisition_cost, unit: INR, rationale: "Ex-showroom + body build", modules: [fleet]}
+  - {key: fleet.vehicle_types.VAN_2T.lease_per_month, unit: INR/month, rationale: "Operating lease quote basis", modules: [fleet]}
+  - {key: fleet.allocation_by_role, unit: vehicles, rationale: "Home-depot allocation of each city's 25-vehicle fleet by depot role", modules: [vrp, fleet]}
+  - {key: fleet.operating_days_per_year, unit: days, rationale: "Annualisation of daily route economics", modules: [fleet, network]}
+  - {key: orders.base_daily_orders, unit: orders/day, rationale: "Average non-event weekday deliveries per city at volume_weight 1.0", modules: [data]}
+  - {key: orders.stocking_roles, unit: depot roles, rationale: "Segment stocking policy; each order ships from its nearest stocking depot in its city", modules: [data, vrp, fleet]}
+  - {key: orders.service_minutes.ECOM_B2C, unit: min, rationale: "Doorstep handover incl. OTP", modules: [vrp, fleet]}
+  - {key: orders.service_minutes.B2B_PER_KG, unit: min/kg, rationale: "Unloading time per kg for cartons/pallets", modules: [vrp, fleet]}
+  - {key: traffic.bands, unit: multiplier, rationale: "Morning 1.8x, midday 1.1x, evening 2.2x on free-flow time", modules: [vrp, fleet, simulation, ml]}
+  - {key: telematics.rain_travel_factor, unit: multiplier, rationale: "Travel time inflation on rain days in trip logs", modules: [data, ml]}
+  - {key: routing.duty_buffer_pct, unit: share, rationale: "Planning headroom on driver duty limit so routes replayed under real traffic stay legal", modules: [vrp, fleet]}
+  - {key: routing.time_limit_s, unit: s, rationale: "Upper bound on guided local search per depot", modules: [vrp]}
+  - {key: routing.outsourcing_cost, unit: INR/order, rationale: "Spot-market cost charged for an order the fleet cannot serve", modules: [vrp, fleet]}
+  - {key: fleet_sizing.compliance_target, unit: share, rationale: "Minimum on-time-in-window share for a feasible fleet", modules: [fleet]}
+  - {key: warehouse.zone_slot_counts, unit: slots, rationale: "Golden (A), silver (B), bulk (C) zone sizes, 10,000 slots per city DC", modules: [slotting]}
+  - {key: warehouse.heavy_threshold_kg, unit: kg, rationale: "Items above this weight must sit on floor or approved lower shelf", modules: [slotting]}
+  - {key: warehouse.pick_orders, unit: orders, rationale: "Pick history (~65 days) at volume_weight 1.0; last third held out", modules: [slotting]}
+  - {key: warehouse.walk_speed_mps, unit: m/s, rationale: "Picker walking speed with cart", modules: [slotting, simulation]}
+  - {key: warehouse.picker_wage_per_hour, unit: INR/h, rationale: "Loaded warehouse associate cost at Mumbai wage level", modules: [slotting]}
+  - {key: simulation.replications, unit: runs, rationale: "Monte Carlo replications per scenario", modules: [simulation]}
+  - {key: simulation.cycle_time_target_min, unit: min, rationale: "P95 order intake-to-dispatch target", modules: [simulation]}
+  - {key: simulation.baseline_staffing, unit: heads/shift, rationale: "Current roster at volume_weight 1.0 (scaled per city)", modules: [simulation]}
+  - {key: network.mfc_capex_inr, unit: INR, rationale: "MFC fit-out, racking, IT, MHE and deposits", modules: [network]}
+  - {key: network.mfc_area_sqft, unit: sqft, rationale: "Dark-store footprint", modules: [network]}
+  - {key: network.mfc_staff_cost_per_year, unit: INR/year, rationale: "MFC staffing (two shifts) at Mumbai wage level", modules: [network]}
+  - {key: network.linehaul_cost_per_km, unit: INR/km, rationale: "Replenishment truck cost DC to MFC", modules: [network]}
+  - {key: network.wacc, unit: share, rationale: "Discount rate for five-year NPV", modules: [network]}
+  - {key: network.demand_growth, unit: share/year, rationale: "E-commerce parcel volume growth", modules: [network]}
+  - {key: network.sla_traffic_factor, unit: multiplier, rationale: "Two-hour promise tested at evening-peak traffic", modules: [network]}
+  - {key: network.sla_minutes, unit: min, rationale: "Two-hour delivery promise", modules: [network]}

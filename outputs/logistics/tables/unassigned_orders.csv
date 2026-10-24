@@ -1,0 +1,27 @@
+plan,order_id,city_id,depot_id,segment,zone,lat,lon,weight_kg,tw_start_min,tw_end_min,outsourcing_cost,reason
+baseline,ORD-MUM-002355,MUM,DEP-MUM-MFC,ECOM_B2C,South Mumbai,18.909238,72.831736,2.54,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002406,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.620647,77.087092,1.5,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002410,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.645675,77.116169,1.81,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002418,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.640025,77.125357,2.5,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002423,DEL,DEP-DEL-MFC,ECOM_B2C,Gurugram,28.421363,77.096151,4.59,1080,1200,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002427,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.665136,77.140074,1.05,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002450,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.65404,77.132131,19.6,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002494,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.640025,77.125357,2.62,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002519,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.649465,77.12773,1.01,1080,1200,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002540,DEL,DEP-DEL-MFC,ECOM_B2C,Gurugram,28.42982,77.096661,3.62,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002542,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.590993,77.0426,1.73,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002549,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.67602,77.131174,1.89,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002556,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.653487,77.126519,14.61,1080,1260,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002557,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.648387,77.122105,1.16,1080,1200,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002558,DEL,DEP-DEL-MFC,ECOM_B2C,Gurugram,28.427295,77.109586,0.26,1080,1200,220.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002592,DEL,DEP-DEL-HUB,FMCG_RETAIL,West Delhi,28.619815,77.086501,232.48,540,780,2600.0,capacity/time-window/duration limits
+baseline,ORD-DEL-002595,DEL,DEP-DEL-HUB,FMCG_RETAIL,West Delhi,28.59417,77.043206,149.13,540,780,2600.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002423,DEL,DEP-DEL-MFC,ECOM_B2C,Gurugram,28.421363,77.096151,4.59,1080,1200,220.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002440,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.591703,77.043496,6.86,540,720,220.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002526,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.589743,77.049703,12.23,540,720,220.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002531,DEL,DEP-DEL-MFC,ECOM_B2C,West Delhi,28.589743,77.049703,2.04,540,720,220.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002540,DEL,DEP-DEL-MFC,ECOM_B2C,Gurugram,28.42982,77.096661,3.62,1080,1260,220.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002635,DEL,DEP-DEL-DC,AUTOMOTIVE,Noida,28.594706,77.448631,148.09,480,600,2400.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002642,DEL,DEP-DEL-DC,AUTOMOTIVE,South Delhi,28.564461,77.243837,52.1,480,600,2400.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002645,DEL,DEP-DEL-DC,AUTOMOTIVE,South Delhi,28.512842,77.199105,20.06,480,600,2400.0,capacity/time-window/duration limits
+optimized,ORD-DEL-002653,DEL,DEP-DEL-DC,AUTOMOTIVE,Central Delhi,28.643327,77.235098,50.45,480,600,2400.0,capacity/time-window/duration limits
