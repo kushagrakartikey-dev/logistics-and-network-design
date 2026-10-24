@@ -4,7 +4,7 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
-data/
+/data/
 logs/
 outputs/logistics/tables/*.parquet
 .DS_Store
